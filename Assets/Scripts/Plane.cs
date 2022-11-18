@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Plane : MonoBehaviour
 {
-    public float scrollSpeedX = 0.1f;
+    public float speed = 0.03f;
     Renderer rend;
     private GameObject cylinder1;
     private GameObject cylinder2;
@@ -12,6 +12,8 @@ public class Plane : MonoBehaviour
     private Transform cylinder1Transform;
     private Transform cylinder2Transform;
     private Renderer plane2Renderer;
+
+    public  float lengthPlane;
 
     // Start is called before the first frame update
     void Start()
@@ -33,11 +35,17 @@ public class Plane : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float offsetX = Time.time * scrollSpeedX;
+        float offsetX = Time.time * speed;
         rend.material.mainTextureOffset = new Vector2(offsetX, 0);
         plane2Renderer.material.mainTextureOffset = new Vector2(-offsetX, 0);
+        //  Debug.Log(cylinder1Transform.localScale.x);
+        cylinder1Transform.Rotate(0, 0, -speed * Time.time);
+        cylinder2Transform.Rotate(0, 0, -speed * Time.time);
 
-        cylinder1Transform.Rotate(0, 0, -scrollSpeedX * Time.time);
-        cylinder2Transform.Rotate(0, 0, -scrollSpeedX * Time.time);
+    }
+
+    private void FixedUpdate()
+    {
+
     }
 }

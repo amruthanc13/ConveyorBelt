@@ -46,14 +46,16 @@ public class Dates : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.right * Time.deltaTime);
+        if (transform.position.y > 2) //TODO: needs to be changed
+        {
+            transform.Translate(Vector3.right * (speed*10)  *  Time.deltaTime);
 
-
-        lerpedColor = Color.Lerp(colorIni, colorFin, t);
-        rend.material.color = lerpedColor;
-        distanceTravelled += Vector3.Distance(transform.position, lastPosition);
-        lastPosition = transform.position;
-        t = distanceTravelled / planeLength;
+            lerpedColor = Color.Lerp(colorIni, colorFin, t);
+            rend.material.color = lerpedColor;
+            distanceTravelled += Vector3.Distance(transform.position, lastPosition);
+            lastPosition = transform.position;
+            t = distanceTravelled / planeLength;
+        }
 
     }
     private void FixedUpdate()

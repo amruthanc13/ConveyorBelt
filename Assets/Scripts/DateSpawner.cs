@@ -11,7 +11,7 @@ public class DateSpawner : MonoBehaviour
     void Start()
     {
 
-        InvokeRepeating("spawnDates", 0f, 0.2f);
+        InvokeRepeating("spawnDates", 0f, 0.4f);
     }
 
 

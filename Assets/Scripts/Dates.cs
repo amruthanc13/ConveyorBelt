@@ -23,23 +23,29 @@ public class Dates : MonoBehaviour
     private Renderer rend;
     private float distanceTravelled = 0f;
     private Vector3 lastPosition;
+    private Vector3 startScale;
+    private Vector3 targetScale;
+    Material targetMat;
 
 
     // Start is called before the first frame update
     void Start()
     {
         rigidBodyComponent = GetComponent<Rigidbody>();
-        plane = GameObject.Find("Plane");
+        plane = GameObject.Find("conveyor_plane");
 
         planeLength = plane.GetComponent<MeshRenderer>().bounds.size.x;
-        //Debug.Log(planeLength);
         
-        speed = (float)plane.GetComponent<Plane>().speed;
-        // Debug.Log(plane.GetComponent<Plane>().speed);
-        //Debug.Log(speed);
+        speed = (float)plane.GetComponent<conveyor_plane>().speed;
 
         rend = GetComponent<Renderer>();
         lastPosition = transform.position;
+
+        startScale = transform.localScale;
+        targetScale = startScale * 0.75f;
+
+        targetMat = Resources.Load("dates_texture", typeof(Material)) as Material;
+
 
     }
 
@@ -48,15 +54,20 @@ public class Dates : MonoBehaviour
     {
         if (transform.position.y > 2) //TODO: needs to be changed
         {
-            transform.Translate(Vector3.right * (speed*10)  *  Time.deltaTime);
+            transform.Translate(Vector3.right * (speed * 40) * Time.deltaTime, Space.World);
 
             lerpedColor = Color.Lerp(colorIni, colorFin, t);
+
+            transform.localScale = Vector3.Lerp(startScale, targetScale, t);
+
             rend.material.color = lerpedColor;
+
+
             distanceTravelled += Vector3.Distance(transform.position, lastPosition);
             lastPosition = transform.position;
             t = distanceTravelled / planeLength;
-        }
 
+        }
     }
     private void FixedUpdate()
     {

@@ -11,7 +11,7 @@ public class DateSpawner : MonoBehaviour
     void Start()
     {
 
-        InvokeRepeating("spawnDates", 0f, 0.4f);
+        InvokeRepeating("spawnDates", 0f, 0.07f);
     }
 
 
@@ -25,7 +25,7 @@ public class DateSpawner : MonoBehaviour
     void spawnDates()
     //Vector3 pos = new Vector3()
     {
-        Vector3 pos = new Vector3(transform.position.x, transform.position.y, Random.Range(transform.position.z-1, transform.position.z+1));
+        Vector3 pos = new Vector3(transform.position.x, transform.position.y, Random.Range(transform.position.z-2, transform.position.z+2));
         Instantiate(datePrefab, pos, Quaternion.identity);
     }
 }

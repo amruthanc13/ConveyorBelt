@@ -21,4 +21,9 @@ public class BackButtonUI : MonoBehaviour
             }
         }
     }
+
+    public void Back()
+    {
+        SceneManager.LoadScene(1);
+    }
 }

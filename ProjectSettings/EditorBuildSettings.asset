@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HomePage.unity
     guid: bfc6ed79525adcf3a81c856019faaf1e
+  - enabled: 1
+    path: Assets/Scenes/ProcessPage.unity
+    guid: e2ec31134cfb2cb37885d123298615ae
+  - enabled: 1
+    path: Assets/Scenes/Process.unity
+    guid: 5701c1b4c63a05242a8335531b15cf5b
+  - enabled: 1
+    path: Assets/Scenes/CreditsPage.unity
+    guid: 9f088ded9ec0eb006ad574308d7d2a04
+  - enabled: 1
+    path: Assets/Scenes/Exitpage.unity
+    guid: 6fdbfdb0d475fb1018cf4eb26836c360
   m_configObjects: {}

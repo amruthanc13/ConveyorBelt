@@ -24,6 +24,6 @@ public class ButtonUI : MonoBehaviour
     }
     public void ExitButton()
     {
-        SceneManager.LoadScene(ExitPage);
+        Application.Quit();
     }
 }

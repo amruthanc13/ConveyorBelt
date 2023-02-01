@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class FanButton : MonoBehaviour
 {
-    public GameObject fan;
+    public GameObject fanLeft;
+    public GameObject fanRight;
     public float rotateSpeed = 100;
     bool rotateStatus = false;
 
@@ -23,7 +24,8 @@ public class FanButton : MonoBehaviour
     {
         if(rotateStatus == true)
         {
-            fan.transform.Rotate(0,0, rotateSpeed * Time.deltaTime);
+            fanLeft.transform.Rotate(0,0, rotateSpeed * Time.deltaTime);
+            fanRight.transform.Rotate(0,0, rotateSpeed * Time.deltaTime);
         }
     }
 }

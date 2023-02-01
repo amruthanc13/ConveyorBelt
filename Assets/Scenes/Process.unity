@@ -520,7 +520,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1885edec191dcb37289c80e95838036a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fan: {fileID: 332296961}
+  fanLeft: {fileID: 1361668901}
+  fanRight: {fileID: 332296961}
   rotateSpeed: 100
 --- !u!4 &397906936
 Transform:
@@ -1273,6 +1274,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0453fbf8ac1edfd43aec8a4c4901df19, type: 3}
+--- !u!1 &1361668901 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3531565217989258274, guid: 0453fbf8ac1edfd43aec8a4c4901df19, type: 3}
+  m_PrefabInstance: {fileID: 1361668900}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1368288535
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CreditsPage.unity
     guid: 9f088ded9ec0eb006ad574308d7d2a04
-  - enabled: 1
-    path: Assets/Scenes/Exitpage.unity
-    guid: 6fdbfdb0d475fb1018cf4eb26836c360
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

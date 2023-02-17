@@ -8,7 +8,6 @@ public class ButtonUI : MonoBehaviour
     [SerializeField] private string ProcessPage = "ProcessPage";
     [SerializeField] private string Process = "Process";
     [SerializeField] private string CreditsPage = "CreditsPage";
-    [SerializeField] private string ExitPage = "ExitPage";
 
     public void ProcessButton()
     {

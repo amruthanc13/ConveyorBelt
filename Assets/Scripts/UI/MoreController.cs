@@ -12,15 +12,18 @@ public class MoreController : MonoBehaviour
     public GameObject ParamsButton;
     public GameObject moreButton;
     public GameObject GraphCanvas;
+    public GameObject ParamCanvas;
     // public GameObject lessButton;
     private bool more = false;
     private bool graph = false;
-    
+    private bool param = false;
+
     // Start is called before the first frame update
     void Start()
     {
         more = false;
         graph = true;
+        param = true;
     }
 
     // Update is called once per frame
@@ -57,6 +60,19 @@ public class MoreController : MonoBehaviour
         else{
             GraphCanvas.SetActive(true);
             graph = false;
+        }
+    }
+    public void onParamsButtonClick()
+    {
+        if (!param)
+        {
+            ParamCanvas.SetActive(false);
+            param = true;
+        }
+        else
+        {
+            ParamCanvas.SetActive(true);
+            param = false;
         }
     }
 }

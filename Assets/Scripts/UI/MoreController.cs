@@ -20,7 +20,7 @@ public class MoreController : MonoBehaviour
     void Start()
     {
         more = false;
-        graph = false;
+        graph = true;
     }
 
     // Update is called once per frame

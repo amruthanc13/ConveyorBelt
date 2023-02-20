@@ -732,7 +732,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 162599967}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 883915427}
+        m_TargetAssemblyTypeName: MoreController, Assembly-CSharp
+        m_MethodName: onMoreButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &162599967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1445,7 +1457,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1600, y: 0}
+  m_AnchoredPosition: {x: 1600, y: -30}
   m_SizeDelta: {x: 80, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &645408356
@@ -2175,6 +2187,7 @@ GameObject:
   - component: {fileID: 883915423}
   - component: {fileID: 883915422}
   - component: {fileID: 883915426}
+  - component: {fileID: 883915427}
   m_Layer: 5
   m_Name: UI Canvas
   m_TagString: Untagged
@@ -2279,6 +2292,25 @@ MonoBehaviour:
   image: {fileID: 1139411925}
   playIcon: {fileID: 21300000, guid: 77e80d9dad76e74469ce748b77cdbe1a, type: 3}
   pauseIcon: {fileID: 21300000, guid: 8eb9669081de23044bab500123db153d, type: 3}
+--- !u!114 &883915427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883915421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7bfc15566d1272e0aed331b214ebd43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 872988333}
+  LessIcon: {fileID: 21300000, guid: cf277ab67e13410ae85e8864696cf76b, type: 3}
+  MoreIcon: {fileID: 21300000, guid: e0c6c13adf6e1c732983ebfa17fc670a, type: 3}
+  GraphButton: {fileID: 1264296615}
+  ParamsButton: {fileID: 2037126834}
+  moreButton: {fileID: 162599964}
+  GraphCanvas: {fileID: 1409553099}
 --- !u!1 &939537493
 GameObject:
   m_ObjectHideFlags: 0
@@ -2316,7 +2348,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: 0}
+  m_AnchoredPosition: {x: 300, y: -30}
   m_SizeDelta: {x: 80, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &939537495
@@ -2930,7 +2962,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 900, y: -30}
   m_SizeDelta: {x: 80, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1264296617
@@ -2976,7 +3008,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1264296618}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 883915427}
+        m_TargetAssemblyTypeName: MoreController, Assembly-CSharp
+        m_MethodName: onGraphButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1264296618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3329,7 +3373,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1409553100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7184,7 +7228,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -300, y: 0}
+  m_AnchoredPosition: {x: 600, y: -30}
   m_SizeDelta: {x: 80, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2037126836

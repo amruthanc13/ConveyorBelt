@@ -8,12 +8,13 @@ public class SliderScript : MonoBehaviour
 {
     [SerializeField] private Slider _slider;
     [SerializeField] private TextMeshProUGUI _sliderText;
+    [SerializeField] private string unit = "";
     // Start is called before the first frame update
     void Start()
     {
         _slider.onValueChanged.AddListener((v) =>
         {
-            _sliderText.text = v.ToString("0");
+            _sliderText.text = v.ToString("0") + unit ;
         });
         
     }
@@ -21,6 +22,6 @@ public class SliderScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _sliderText.text = _slider.value.ToString("0");
+        _sliderText.text = _slider.value.ToString("0") + unit;
     }
 }

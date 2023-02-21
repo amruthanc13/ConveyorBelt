@@ -1,31 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DateSpawner : MonoBehaviour
 {
 
     public GameObject datePrefab;
-    public int spawnCount;
+    private int spawnCount = 0;
+    private int requiredCount = 0;
+    [SerializeField] private Slider _slider;
     // Start is called before the first frame update
     void Start()
     {
+        calculateNoOfDates(_slider.value);
 
         InvokeRepeating("spawnDates", 0f, 0.07f);
     }
 
-
-
     // Update is called once per frame
     void Update()
     {
-   
+
+        if (spawnCount >= requiredCount)
+            CancelInvoke("spawnDates");
     }
 
     void spawnDates()
     //Vector3 pos = new Vector3()
     {
-        Vector3 pos = new Vector3(transform.position.x, transform.position.y, Random.Range(transform.position.z-2, transform.position.z+2));
+        Vector3 pos = new Vector3(transform.position.x, transform.position.y, UnityEngine.Random.Range(transform.position.z - 2, transform.position.z + 2));
         Instantiate(datePrefab, pos, Quaternion.identity);
+        spawnCount++;
+    }
+
+    public void calculateNoOfDates(float weight)
+    {
+        //Assuming weight of a fresh date is 8g
+        requiredCount = (int)(Math.Round(weight, 0) * 1000 / 8);
+
     }
 }

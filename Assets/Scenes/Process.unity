@@ -4807,7 +4807,19 @@ MonoBehaviour:
   m_Value: 2
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2028280990}
+        m_TargetAssemblyTypeName: DateSpawner, Assembly-CSharp
+        m_MethodName: calculateNoOfDates
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1264296615
 GameObject:
   m_ObjectHideFlags: 0
@@ -10620,7 +10632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   datePrefab: {fileID: 5420555265806810461, guid: c540e56dd1540834c989f900133b0f6d, type: 3}
-  spawnCount: 5
+  _slider: {fileID: 1256581812}
 --- !u!4 &2028280991
 Transform:
   m_ObjectHideFlags: 0

@@ -32,7 +32,7 @@ public class TableLength : MonoBehaviour
         tableTransform.position = new Vector3(30.5f,9.6f,22.3f);
         GameObject.Find("fan_case_left").transform.position = new Vector3(-17.95f, 11.33f, 13.64f);
         GameObject.Find("fan_case_right").transform.position = new Vector3(39.71f, 11.40f, 24.05f);
-        GameObject.Find("capsule").transform.position = new Vector3(9.40f, 11.23f, -29.40f);
+        GameObject.Find("capsule").transform.position = new Vector3(16.31f, 11.23f, -29.40f);
         GameObject.Find("bin").transform.position = new Vector3(33.77f, 8.71f, 22.08f);
         GameObject.Find("feeder").transform.position = new Vector3(-14.84f, 16.84f, 22.20f);
         GameObject.Find("DateSpawner").transform.position = new Vector3(-12.54f, 14.50f, 18.89f);

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class PlayController : MonoBehaviour
 {
     private bool playing = false;
@@ -11,11 +12,13 @@ public class PlayController : MonoBehaviour
     public Sprite playIcon;
     public Sprite pauseIcon;
     public GameObject refreshButton;
+    public GameObject ParamCanvas;
 
     void Start()
     {
         playing = true;
         Time.timeScale = 0;
+        ParamCanvas.GetComponent<CanvasGroup>().interactable = true;
     }
 
     public void playProcess()
@@ -28,6 +31,7 @@ public class PlayController : MonoBehaviour
             Time.timeScale = 1;
             playing = false;
             refreshButton.SetActive(true);
+            ParamCanvas.GetComponent<CanvasGroup>().interactable = false;
         }
         else
         {
@@ -36,6 +40,7 @@ public class PlayController : MonoBehaviour
             Time.timeScale = 0;
             playing = true;
             refreshButton.SetActive(true);
+            ParamCanvas.GetComponent<CanvasGroup>().interactable = false;
         }
     }
 

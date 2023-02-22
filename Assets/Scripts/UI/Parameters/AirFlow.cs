@@ -13,6 +13,7 @@ public class AirFlow : MonoBehaviour
     {
         toggleGroup = GetComponent<ToggleGroup>();
         counterCurrentSlider.enabled = false;
+        counterCurrentSlider.interactable = false;
         counterCurrentSlider.value = 0;
     }
 
@@ -24,17 +25,17 @@ public class AirFlow : MonoBehaviour
 
     public void coCurrentButtonClick()
     {
-        counterCurrentSlider.enabled = false;
+        counterCurrentSlider.interactable = false;
         counterCurrentSlider.value = 0;
-        coCurrentSlider.enabled = true;
+        coCurrentSlider.interactable = true;
         coCurrentSlider.value = 100;
     }
 
     public void counterCurrentButtonClick()
     {
-        counterCurrentSlider.enabled = true;
+        counterCurrentSlider.interactable = true;
         counterCurrentSlider.value = 100;
         coCurrentSlider.value = 0;
-        coCurrentSlider.enabled = false;
+        coCurrentSlider.interactable = false;
     }
 }

@@ -16,7 +16,7 @@ public class DateSpawner : MonoBehaviour
     {
         calculateNoOfDates(_slider.value);
 
-        InvokeRepeating("spawnDates", 1f, 0.07f);
+        InvokeRepeating("spawnDates", 1f, 0.09f);
     }
 
     // Update is called once per frame

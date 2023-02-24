@@ -54,7 +54,7 @@ public class Dates : MonoBehaviour
     {
         if (transform.position.y > 2) //TODO: needs to be changed
         {
-            transform.Translate(Vector3.right * (speed * 40) * Time.deltaTime, Space.World);
+            transform.Translate(Vector3.right * (speed) *10* Time.deltaTime, Space.World);
 
             lerpedColor = Color.Lerp(colorIni, colorFin, t);
 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class ConveyorBelt : MonoBehaviour
 {
 
-    public float speed = 0.03f;
+    public float speed = 0.1f;
     Renderer rend;
 
     // Start is called before the first frame update

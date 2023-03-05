@@ -9,7 +9,7 @@ public class Dates : MonoBehaviour
     private GameObject plane;
     private Transform planeTransform;
 
-    private float speed;
+    public float speed;
     private float planeLength;
    
     private TextMeshProUGUI textInput;
@@ -26,6 +26,7 @@ public class Dates : MonoBehaviour
     private Vector3 startScale;
     private Vector3 targetScale;
     Material targetMat;
+    public int multiplier = 6;
 
 
     // Start is called before the first frame update
@@ -52,9 +53,10 @@ public class Dates : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        speed = (float)plane.GetComponent<conveyor_plane>().speed;
         if (transform.position.y > 2) //TODO: needs to be changed
         {
-            transform.Translate(Vector3.right * (speed) *10* Time.deltaTime, Space.World);
+            transform.Translate(Vector3.right * (speed) * multiplier * Time.deltaTime, Space.World);
 
             lerpedColor = Color.Lerp(colorIni, colorFin, t);
 

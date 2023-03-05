@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 
 public class PlayController : MonoBehaviour
@@ -13,6 +14,7 @@ public class PlayController : MonoBehaviour
     public Sprite pauseIcon;
     public GameObject refreshButton;
     public GameObject ParamCanvas;
+    public TMP_Text toolTip;
 
     void Start()
     {
@@ -28,6 +30,7 @@ public class PlayController : MonoBehaviour
         {
             //Play block
             image.sprite = pauseIcon;
+            toolTip.text = "Pause";
             Time.timeScale = 1;
             playing = false;
             refreshButton.SetActive(true);
@@ -37,6 +40,7 @@ public class PlayController : MonoBehaviour
         {
             //Pause block
             image.sprite = playIcon;
+            toolTip.text = "Play";
             Time.timeScale = 0;
             playing = true;
             refreshButton.SetActive(true);

@@ -11,6 +11,7 @@ public class DateSpawner : MonoBehaviour
     private int spawnCount = 0;
     private int requiredCount = 0;
     public float repeatTime = 0f;
+    public float repeatTimeOld = 0f;
     [SerializeField] private Slider _slider;
     // Start is called before the first frame update
     void Start()
@@ -19,12 +20,22 @@ public class DateSpawner : MonoBehaviour
         calculateNoOfDates(_slider.value);
 
         InvokeRepeating("spawnDates", 1f, repeatTime);
+        repeatTimeOld = repeatTime;
     }
 
     // Update is called once per frame
     void Update()
     {
         repeatTime = (float)GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().repeatTime;
+
+        if (repeatTimeOld != repeatTime && (spawnCount < requiredCount))
+        {
+            CancelInvoke("spawnDates");
+
+            InvokeRepeating("spawnDates", 0f, repeatTime);
+            repeatTimeOld = repeatTime;
+        }
+        
         if (spawnCount >= requiredCount)
             CancelInvoke("spawnDates");
     }

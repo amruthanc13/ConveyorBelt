@@ -433,7 +433,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh40500
+  m_Name: pb_Mesh90876
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6817,7 +6817,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 485, y: -268}
+  m_AnchoredPosition: {x: 385, y: -268}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1506664982
@@ -8827,8 +8827,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 104.1, y: -30}
-  m_SizeDelta: {x: 100, y: 50}
+  m_AnchoredPosition: {x: 80.91, y: -0.2}
+  m_SizeDelta: {x: 53.62, y: 34.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1842548371
 MonoBehaviour:
@@ -12222,6 +12222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   datePrefab: {fileID: 5420555265806810461, guid: c540e56dd1540834c989f900133b0f6d, type: 3}
   repeatTime: 0
+  repeatTimeOld: 0
   _slider: {fileID: 1256581812}
 --- !u!4 &2028280991
 Transform:
@@ -12231,7 +12232,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2028280989}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1.14, y: -0.6, z: -0.4}
+  m_LocalPosition: {x: -1.14, y: -0.83, z: -0.455}
   m_LocalScale: {x: 0.15873007, y: 0.25, z: 0.32787725}
   m_ConstrainProportionsScale: 0
   m_Children: []

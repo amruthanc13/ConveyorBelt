@@ -10,14 +10,11 @@ public class SpeedSlider : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _sliderText;
     [SerializeField] private string unit = "";
     float val = 0f;
-    private float multiplier;
-   /* public static Dates[] dates;*/
 
     // Start is called before the first frame update
     void Start()
     {
-/*        dates = FindObjectsOfType<Dates>();
-*/
+
         _slider.onValueChanged.AddListener((v) =>
         {
             _sliderText.text = (v/2).ToString("0") + unit;
@@ -48,30 +45,29 @@ public class SpeedSlider : MonoBehaviour
 
     public void speedSliderOnValueChanged(float value)
     {
-        /*dates = FindObjectsOfType<Dates>();
-        Debug.Log(dates.Length);*/
+
         switch (value)
         {
 
             case 1:
                 GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().speed = 0.1f;
 
-                GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().repeatTime = 0.10f;
+                GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().repeatTime = 0.15f;
                 break;
             case 2:
                 GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().speed = 0.2f;
 
-                GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().repeatTime = 0.08f;
+                GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().repeatTime = 0.06f;
                 break;
             case 3:
                 GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().speed = 0.3f;
 
-                GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().repeatTime = 0.20f;
+                GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().repeatTime = 0.05f;
                 break;
             case 4:
                 GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().speed = 0.4f;
 
-                GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().repeatTime = 0.04f;
+                GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().repeatTime = 0.042f;
                 break;
             default:
                 break;

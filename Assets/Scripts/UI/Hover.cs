@@ -21,15 +21,12 @@ public class Hover : MonoBehaviour
 
     public void onHoverButton()
     {
-
-            Image.SetActive(false);
-            Tooltip.SetActive(true);
-           
+        Image.SetActive(false);
+        Tooltip.SetActive(true);   
     }
 
     public void onLeavingButton()
     {
-
         Image.SetActive(true);
         Tooltip.SetActive(false);
     }

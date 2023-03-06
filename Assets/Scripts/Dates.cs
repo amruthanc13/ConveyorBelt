@@ -26,7 +26,7 @@ public class Dates : MonoBehaviour
     private Vector3 startScale;
     private Vector3 targetScale;
     Material targetMat;
-    public int multiplier = 6;
+    public int multiplier;
 
 
     // Start is called before the first frame update
@@ -38,6 +38,7 @@ public class Dates : MonoBehaviour
         planeLength = plane.GetComponent<MeshRenderer>().bounds.size.x;
         
         speed = (float)plane.GetComponent<conveyor_plane>().speed;
+        multiplier = plane.GetComponent<conveyor_plane>().multiplier;
 
         rend = GetComponent<Renderer>();
         lastPosition = transform.position;
@@ -54,6 +55,7 @@ public class Dates : MonoBehaviour
     void Update()
     {
         speed = (float)plane.GetComponent<conveyor_plane>().speed;
+        multiplier = plane.GetComponent<conveyor_plane>().multiplier;
         if (transform.position.y > 2) //TODO: needs to be changed
         {
             transform.Translate(Vector3.right * (speed) * multiplier * Time.deltaTime, Space.World);

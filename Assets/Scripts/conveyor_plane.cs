@@ -7,6 +7,7 @@ public class conveyor_plane : MonoBehaviour
     public float speed = 0.03f;
     Renderer rend;
     public float repeatTime = 0.06f;
+    public int multiplier = 6;
     // Start is called before the first frame update
     void Start()
     {

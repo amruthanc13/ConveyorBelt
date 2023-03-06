@@ -2071,11 +2071,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4450623006134859486, guid: 0453fbf8ac1edfd43aec8a4c4901df19, type: 3}
       propertyPath: speed
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4450623006134859486, guid: 0453fbf8ac1edfd43aec8a4c4901df19, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450623006271883281, guid: 0453fbf8ac1edfd43aec8a4c4901df19, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0453fbf8ac1edfd43aec8a4c4901df19, type: 3}

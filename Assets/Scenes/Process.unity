@@ -949,7 +949,19 @@ MonoBehaviour:
   m_Group: {fileID: 458713187}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 458713188}
+        m_TargetAssemblyTypeName: FeedQtyScript, Assembly-CSharp
+        m_MethodName: qty2ButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &135907637
 GameObject:
@@ -2569,6 +2581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 458713186}
   - component: {fileID: 458713187}
+  - component: {fileID: 458713188}
   m_Layer: 0
   m_Name: RadioButtonQty
   m_TagString: Untagged
@@ -2607,6 +2620,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AllowSwitchOff: 0
+--- !u!114 &458713188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458713185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5898a9e8311d2a4e8a4eb0ca8ae4f10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &492841937
 GameObject:
   m_ObjectHideFlags: 0
@@ -4842,7 +4867,19 @@ MonoBehaviour:
   m_Group: {fileID: 458713187}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 458713188}
+        m_TargetAssemblyTypeName: FeedQtyScript, Assembly-CSharp
+        m_MethodName: qty3ButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &795630508
 GameObject:
@@ -13571,7 +13608,19 @@ MonoBehaviour:
   m_Group: {fileID: 458713187}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 458713188}
+        m_TargetAssemblyTypeName: FeedQtyScript, Assembly-CSharp
+        m_MethodName: qty1ButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &1949047747
 GameObject:
@@ -16595,9 +16644,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   datePrefab: {fileID: 5420555265806810461, guid: c540e56dd1540834c989f900133b0f6d, type: 3}
+  requiredCount: 0
   repeatTime: 0
   repeatTimeOld: 0
-  _slider: {fileID: 1256581812}
 --- !u!4 &2028280991
 Transform:
   m_ObjectHideFlags: 0

@@ -9,15 +9,14 @@ public class DateSpawner : MonoBehaviour
 
     public GameObject datePrefab;
     private int spawnCount = 0;
-    private int requiredCount = 0;
+    public int requiredCount = 0;
     public float repeatTime = 0f;
     public float repeatTimeOld = 0f;
-    [SerializeField] private Slider _slider;
     // Start is called before the first frame update
     void Start()
     {
         repeatTime = (float)GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().repeatTime;
-        calculateNoOfDates(_slider.value);
+        calculateNoOfDates();
 
         InvokeRepeating("spawnDates", 1f, repeatTime);
         repeatTimeOld = repeatTime;
@@ -48,10 +47,11 @@ public class DateSpawner : MonoBehaviour
         spawnCount++;
     }
 
-    public void calculateNoOfDates(float weight)
+    public void calculateNoOfDates()
     {
         //Assuming weight of a fresh date is 8g
-        requiredCount = (int)(Math.Round(weight, 0) * 1000 / 8);
+        int weight = 5;
+        requiredCount = (int)(weight * 1000 / 8);
 
     }
 }

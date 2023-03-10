@@ -8,7 +8,7 @@ public class heater : MonoBehaviour
     private Color colorIni = Color.white;
     public Color colorFin = Color.red;
     private Color lerpedColor = Color.white;
-    private float duration = 30f;
+    private float duration = 20f;
     private float t = 0f;
     // Start is called before the first frame update
     void Start()

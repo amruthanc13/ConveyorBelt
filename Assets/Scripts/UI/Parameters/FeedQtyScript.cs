@@ -12,8 +12,8 @@ public class FeedQtyScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        toggleGroup = GetComponent<ToggleGroup>();
-        qty1ButtonClick();
+/*        toggleGroup = GetComponent<ToggleGroup>();
+        qty1ButtonClick();*/
     }
 
     // Update is called once per frame
@@ -22,7 +22,7 @@ public class FeedQtyScript : MonoBehaviour
         
     }
 
-    public void qty1ButtonClick()
+/*    public void qty1ButtonClick()
     {
         weight = 5;
         requiredCount = (int)(weight * 1000 / 8);
@@ -43,5 +43,5 @@ public class FeedQtyScript : MonoBehaviour
         requiredCount = (int)(weight * 1000 / 8);
         GameObject.Find("DateSpawner").GetComponent<DateSpawner>().requiredCount = requiredCount;
 
-    }
+    }*/
 }

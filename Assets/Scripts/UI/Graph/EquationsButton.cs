@@ -5,6 +5,9 @@ using UnityEngine;
 public class EquationsButton : MonoBehaviour
 {
     public GameObject equationsCanvas;
+    public GameObject InfoCanvas;
+    public GameObject GraphCanvas;
+
     private bool equationsFlag = false;
     // Start is called before the first frame update
     void Start()
@@ -23,11 +26,15 @@ public class EquationsButton : MonoBehaviour
         if (!equationsFlag)
         {
             equationsCanvas.SetActive(false);
+            GraphCanvas.SetActive(true);
+            InfoCanvas.SetActive(false);
             equationsFlag = true;
         }
         else
         {
             equationsCanvas.SetActive(true);
+            GraphCanvas.SetActive(false);
+            InfoCanvas.SetActive(false);
             equationsFlag = false;
         }
     }

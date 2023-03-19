@@ -357,7 +357,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25080
+  m_Name: pb_Mesh25090
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10584,7 +10584,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1409553100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10680,6 +10680,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InfoCanvas: {fileID: 1444036671}
+  GraphCanvas: {fileID: 800320517}
+  EquationsCanvas: {fileID: 1561427059}
 --- !u!114 &1409553105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10693,6 +10695,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equationsCanvas: {fileID: 1561427059}
+  InfoCanvas: {fileID: 1444036671}
+  GraphCanvas: {fileID: 800320517}
 --- !u!1 &1429260729
 GameObject:
   m_ObjectHideFlags: 0

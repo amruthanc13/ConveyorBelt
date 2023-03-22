@@ -29,7 +29,7 @@ public class MoistureContent : MonoBehaviour
 
     public void Button1Click()
     {
-        xin = 4;
+        xin = 8;
         int index = 0;
         float xout = 0;
         for (int i = 0; i <= tablelength; i += 2)
@@ -46,7 +46,7 @@ public class MoistureContent : MonoBehaviour
     }
     public void Button2Click()
     {
-        xin = 3;
+        xin = 6;
         int index = 0;
         float xout = 0;
         for (int i = 0; i <= tablelength; i += 2)
@@ -64,6 +64,42 @@ public class MoistureContent : MonoBehaviour
 
     }
     public void Button3Click()
+    {
+        xin = 4;
+        int index = 0;
+        float xout = 0;
+        for (int i = 0; i <= tablelength; i += 2)
+        {
+            xout = ((i * -m * 1) / Ms) + xin;
+            xoutList[index] = xout;
+            Debug.Log(index);
+            index++;
+        }
+        for (int j = 0; j < xoutList.Count; j++)
+        {
+            Debug.Log(xoutList[j]);
+        }
+
+    }
+    public void Button4Click()
+    {
+        xin = 3;
+        int index = 0;
+        float xout = 0;
+        for (int i = 0; i <= tablelength; i += 2)
+        {
+            xout = ((i * -m * 1) / Ms) + xin;
+            xoutList[index] = xout;
+            Debug.Log(index);
+            index++;
+        }
+        for (int j = 0; j < xoutList.Count; j++)
+        {
+            Debug.Log(xoutList[j]);
+        }
+
+    }
+    public void Button5Click()
     {
         xin = 2;
         int index = 0;

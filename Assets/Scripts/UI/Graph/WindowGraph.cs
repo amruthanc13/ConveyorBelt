@@ -2,18 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 // using CodeMonkey.Utils;
 
 public class WindowGraph : MonoBehaviour
 {
     [SerializeField] private Sprite circleSprite;
     private RectTransform GraphContainer;
+    private RectTransform labelTemplateX;
+    private RectTransform labelTemplateY;
+    private RectTransform dashTemplateX;
+    private RectTransform dashTemplateY;
+
+    public ToggleGroup toggleGroup;
 
     private void Awake() {
         GraphContainer = transform.Find("GraphContainer").GetComponent<RectTransform>();
+        labelTemplateX = GraphContainer.Find("LabelX").GetComponent<RectTransform>();
+        labelTemplateY = GraphContainer.Find("LabelY").GetComponent<RectTransform>();
+        dashTemplateX = GraphContainer.Find("dashTemplateX").GetComponent<RectTransform>();
+        dashTemplateY = GraphContainer.Find("dashTemplateY").GetComponent<RectTransform>();
 
-        List<int>  valueList = new List<int>() {5, 98, 56,45,30,22,17};
-        // List<int>  valueList = new List<int>() {1,2,3,4,5,6,7,8,9,10};
+        // List<int>  valueList = new List<int>() {5, 98, 56,45,30,22,17};
+        //List<int>  valueList = new List<int>() {1,2,3,4,5,6,7,8,9,10};
+        // List<float> valueList = new List<float>() { 4f, 3.83f, 3.67f, 3.5f, 3.33f, 3.16f, 3f, 2.83f, 2.67f, 2.5f };
+
+        Debug.Log("Debugginggggg" + toggleGroup.GetComponent<MoistureContent>().Ms);
+        List<float> valueList = toggleGroup.GetComponent<MoistureContent>().xoutList;
+
         ShowGraph(valueList);
         // CreateCircle(new Vector2(200,200));
     }
@@ -30,20 +46,48 @@ public class WindowGraph : MonoBehaviour
         return gameObject;
     }
 
-    private void ShowGraph(List<int> valueList) {
-        float xSize = 50f;
+    private void ShowGraph(List<float> valueList) {
+        float xSize = 40f;
         float yMaximum = 100f;
         float graphHeight = GraphContainer.sizeDelta.y;
         float graphWidth = GraphContainer.sizeDelta.x;
         GameObject lastCircleGameObject = null;
         for(int i = 0; i < valueList.Count; i++) {
             float xPosition = i * xSize;
-            float yPosition = (valueList[i] / yMaximum) * graphHeight;
+            float yPosition = (valueList[i] / yMaximum) *20* graphHeight;
+            Debug.Log("xposition :"+xPosition +"Y position "+yPosition);
             GameObject circleGameObject = CreateCircle(new Vector2(xPosition,yPosition));
             if(lastCircleGameObject != null) {
                 CreateDotConnection(lastCircleGameObject.GetComponent<RectTransform>().anchoredPosition, circleGameObject.GetComponent<RectTransform>().anchoredPosition);
             }
             lastCircleGameObject = circleGameObject;
+
+            RectTransform labelX = Instantiate(labelTemplateX);
+            labelX.SetParent(GraphContainer, false);
+            labelX.gameObject.SetActive(true);
+            labelX.anchoredPosition = new Vector2(xPosition, -2f);
+            labelX.GetComponent<TextMeshProUGUI>().text = (i*2).ToString();
+
+            RectTransform dashX = Instantiate(dashTemplateX);
+            dashX.SetParent(GraphContainer, false);
+            dashX.gameObject.SetActive(true);
+            dashX.anchoredPosition = new Vector2(xPosition, 113.2f);
+        }
+
+        int separatorCount = 10;
+        for(int i=0; i<=separatorCount; i++)
+        {
+            RectTransform labelY = Instantiate(labelTemplateY);
+            labelY.SetParent(GraphContainer, false);
+            labelY.gameObject.SetActive(true);
+            float normalizedValue = i * .05f / separatorCount;
+            labelY.anchoredPosition = new Vector2(-5f, (normalizedValue*20*graphHeight)+2f);
+            labelY.GetComponent<TextMeshProUGUI>().text = (normalizedValue*yMaximum).ToString();
+
+            RectTransform dashY = Instantiate(dashTemplateY);
+            dashY.SetParent(GraphContainer, false);
+            dashY.gameObject.SetActive(true);
+            dashY.anchoredPosition = new Vector2(1.199997f, normalizedValue*20 * graphHeight);
         }
     }
 

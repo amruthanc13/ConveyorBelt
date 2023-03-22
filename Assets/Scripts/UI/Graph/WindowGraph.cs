@@ -27,7 +27,6 @@ public class WindowGraph : MonoBehaviour
         //List<int>  valueList = new List<int>() {1,2,3,4,5,6,7,8,9,10};
         // List<float> valueList = new List<float>() { 4f, 3.83f, 3.67f, 3.5f, 3.33f, 3.16f, 3f, 2.83f, 2.67f, 2.5f };
 
-        Debug.Log("Debugginggggg" + toggleGroup.GetComponent<MoistureContent>().Ms);
         List<float> valueList = toggleGroup.GetComponent<MoistureContent>().xoutList;
 
         ShowGraph(valueList);
@@ -54,8 +53,8 @@ public class WindowGraph : MonoBehaviour
         GameObject lastCircleGameObject = null;
         for(int i = 0; i < valueList.Count; i++) {
             float xPosition = i * xSize;
-            float yPosition = (valueList[i] / yMaximum) *20* graphHeight;
-            Debug.Log("xposition :"+xPosition +"Y position "+yPosition);
+            float yPosition = (valueList[i] / yMaximum) *10* graphHeight;
+            //Debug.Log("xposition :"+xPosition +"Y position "+yPosition);
             GameObject circleGameObject = CreateCircle(new Vector2(xPosition,yPosition));
             if(lastCircleGameObject != null) {
                 CreateDotConnection(lastCircleGameObject.GetComponent<RectTransform>().anchoredPosition, circleGameObject.GetComponent<RectTransform>().anchoredPosition);
@@ -80,14 +79,14 @@ public class WindowGraph : MonoBehaviour
             RectTransform labelY = Instantiate(labelTemplateY);
             labelY.SetParent(GraphContainer, false);
             labelY.gameObject.SetActive(true);
-            float normalizedValue = i * .05f / separatorCount;
-            labelY.anchoredPosition = new Vector2(-5f, (normalizedValue*20*graphHeight)+2f);
-            labelY.GetComponent<TextMeshProUGUI>().text = (normalizedValue*yMaximum).ToString();
+            float normalizedValue = i * 1f / separatorCount;
+            labelY.anchoredPosition = new Vector2(-5f, (normalizedValue*graphHeight)+2f);
+            labelY.GetComponent<TextMeshProUGUI>().text = (normalizedValue*yMaximum/10).ToString();
 
             RectTransform dashY = Instantiate(dashTemplateY);
             dashY.SetParent(GraphContainer, false);
             dashY.gameObject.SetActive(true);
-            dashY.anchoredPosition = new Vector2(1.199997f, normalizedValue*20 * graphHeight);
+            dashY.anchoredPosition = new Vector2(1.199997f, normalizedValue * graphHeight);
         }
     }
 

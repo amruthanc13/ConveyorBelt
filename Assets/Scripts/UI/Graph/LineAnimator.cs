@@ -7,8 +7,11 @@ public class LineAnimator : MonoBehaviour
     [SerializeField] public float animationDuration = 53f;
 
     private LineRenderer lineRenderer;
-    private Vector3[] linePoints;
+    public Vector3[] linePoints;
     private int pointsCount;
+    public Vector3 startPosition;
+    public Vector3 endPosition;
+
     //private float segmentDuration;
 
 
@@ -43,8 +46,8 @@ public class LineAnimator : MonoBehaviour
         {
             float startTime = Time.time;
 
-            Vector3 startPosition = linePoints[i];
-            Vector3 endPosition = linePoints[i+1];
+            startPosition = linePoints[i];
+            endPosition = linePoints[i+1];
 
             Vector3 pos = startPosition;
 
@@ -60,6 +63,20 @@ public class LineAnimator : MonoBehaviour
             }
         }
 
+
+    }
+
+    public void  startParallel()
+    {
+        lineRenderer = GetComponent<LineRenderer>();
+
+        pointsCount = lineRenderer.positionCount;
+        linePoints = new Vector3[pointsCount];
+
+        for (int i = 0; i < pointsCount; i++)
+        {
+            linePoints[i] = lineRenderer.GetPosition(i);
+        }
 
     }
 }

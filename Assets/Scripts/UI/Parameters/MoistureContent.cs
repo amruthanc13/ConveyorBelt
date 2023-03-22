@@ -9,16 +9,27 @@ public class MoistureContent : MonoBehaviour
 
     //public List<float> xoutList = new List<float>(new float[10]);
     public List<float> xoutList = new List<float>() { 4f, 3.83f, 3.67f, 3.5f, 3.33f, 3.16f, 3f, 2.83f, 2.67f, 2.5f };
-    public float Ms = 120f;
+    private float Ms = 120f;
     private float m = 10f;
     private float xin;
     private int tablelength = 18;
     private float requiredTableLength;
+    public GameObject Line;
+    public GameObject GraphCanvas;
+    private LineRenderer lineRenderer;
+
     // Start is called before the first frame update
     void Start()
     {
         toggleGroup = GetComponent<ToggleGroup>();
-        Button1Click();
+        lineRenderer = Line.GetComponent<LineRenderer>();
+        Debug.Log(GraphCanvas.activeSelf);
+        if (!GraphCanvas.activeSelf)
+        {
+            Line.GetComponent<LineAnimator>().startParallel();
+        }
+
+        Button3Click();
     }
 
     // Update is called once per frame
@@ -39,10 +50,22 @@ public class MoistureContent : MonoBehaviour
             Debug.Log(index);
             index++;
         }
-        for (int j = 0; j < xoutList.Count; j++)
+
+        float xSize = 40f;
+        float yMaximum = 100f;
+        float graphHeight = 230f;
+
+        for (int i = 0; i < xoutList.Count; i++)
         {
-            Debug.Log(xoutList[j]);
+            float xPosition = i * xSize;
+            float yPosition = (xoutList[i] / yMaximum) * 10 * graphHeight;
+           
+            lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
+            Line.GetComponent<LineAnimator>().linePoints[i] = new Vector3(xPosition, yPosition, 0);
         }
+        Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
+        Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
+
     }
     public void Button2Click()
     {
@@ -53,15 +76,22 @@ public class MoistureContent : MonoBehaviour
         {
             xout = ((i * -m * 1) / Ms) + xin;
             xoutList[index] = xout;
-            Debug.Log(index);
             index++;
         }
-        for (int j = 0; j < xoutList.Count; j++)
+
+        float xSize = 40f;
+        float yMaximum = 100f;
+        float graphHeight = 230f;
+
+        for (int i = 0; i < xoutList.Count; i++)
         {
-            Debug.Log(xoutList[j]);
+            float xPosition = i * xSize;
+            float yPosition = (xoutList[i] / yMaximum) * 10 * graphHeight;
+            lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
+            Line.GetComponent<LineAnimator>().linePoints[i] = new Vector3(xPosition, yPosition, 0);
         }
-
-
+        Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
+        Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
     }
     public void Button3Click()
     {
@@ -72,14 +102,23 @@ public class MoistureContent : MonoBehaviour
         {
             xout = ((i * -m * 1) / Ms) + xin;
             xoutList[index] = xout;
-            Debug.Log(index);
             index++;
         }
-        for (int j = 0; j < xoutList.Count; j++)
-        {
-            Debug.Log(xoutList[j]);
-        }
 
+        float xSize = 40f;
+        float yMaximum = 100f;
+        float graphHeight = 230f;
+
+        for (int i = 0; i < xoutList.Count; i++)
+        {
+            float xPosition = i * xSize;
+            float yPosition = (xoutList[i] / yMaximum) * 10 * graphHeight;
+           // Debug.Log("xposition :" + xPosition + "Y position " + yPosition);
+            lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
+            Line.GetComponent<LineAnimator>().linePoints[i] = new Vector3(xPosition, yPosition, 0);
+        }
+        Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
+        Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
     }
     public void Button4Click()
     {
@@ -90,13 +129,23 @@ public class MoistureContent : MonoBehaviour
         {
             xout = ((i * -m * 1) / Ms) + xin;
             xoutList[index] = xout;
-            Debug.Log(index);
             index++;
         }
-        for (int j = 0; j < xoutList.Count; j++)
+
+        float xSize = 40f;
+        float yMaximum = 100f;
+        float graphHeight = 230f;
+
+        for (int i = 0; i < xoutList.Count; i++)
         {
-            Debug.Log(xoutList[j]);
+            float xPosition = i * xSize;
+            float yPosition = (xoutList[i] / yMaximum) * 10 * graphHeight;
+           // Debug.Log("xposition :" + xPosition + "Y position " + yPosition);
+            lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
+            Line.GetComponent<LineAnimator>().linePoints[i] = new Vector3(xPosition, yPosition, 0);
         }
+        Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
+        Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
 
     }
     public void Button5Click()
@@ -108,13 +157,23 @@ public class MoistureContent : MonoBehaviour
         {
             xout = ((i * -m * 1) / Ms) + xin;
             xoutList[index] = xout;
-            Debug.Log(index);
             index++;
         }
-        for (int j = 0; j < xoutList.Count; j++)
+
+        float xSize = 40f;
+        float yMaximum = 100f;
+        float graphHeight = 230f;
+
+        for (int i = 0; i < xoutList.Count; i++)
         {
-            Debug.Log(xoutList[j]);
+            float xPosition = i * xSize;
+            float yPosition = (xoutList[i] / yMaximum) * 10 * graphHeight;
+            lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
+            Line.GetComponent<LineAnimator>().linePoints[i] = new Vector3(xPosition, yPosition, 0);
         }
+        Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
+        Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
 
     }
+
 }

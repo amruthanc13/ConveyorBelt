@@ -46,7 +46,6 @@ public class MoistureContent : MonoBehaviour
         {
             xout = ((i * -m * 1) / Ms) + xin;
             xoutList[index] = xout;
-            Debug.Log(index);
             index++;
         }
 

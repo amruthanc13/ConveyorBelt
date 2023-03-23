@@ -50,16 +50,16 @@ public class WindowGraph : MonoBehaviour
         float yMaximum = 100f;
         float graphHeight = GraphContainer.sizeDelta.y;
         float graphWidth = GraphContainer.sizeDelta.x;
-        GameObject lastCircleGameObject = null;
+        //GameObject lastCircleGameObject = null;
         for(int i = 0; i < valueList.Count; i++) {
             float xPosition = i * xSize;
             float yPosition = (valueList[i] / yMaximum) *10* graphHeight;
             //Debug.Log("xposition :"+xPosition +"Y position "+yPosition);
-            GameObject circleGameObject = CreateCircle(new Vector2(xPosition,yPosition));
+            /*GameObject circleGameObject = CreateCircle(new Vector2(xPosition,yPosition));
             if(lastCircleGameObject != null) {
                 CreateDotConnection(lastCircleGameObject.GetComponent<RectTransform>().anchoredPosition, circleGameObject.GetComponent<RectTransform>().anchoredPosition);
             }
-            lastCircleGameObject = circleGameObject;
+            lastCircleGameObject = circleGameObject;*/
 
             RectTransform labelX = Instantiate(labelTemplateX);
             labelX.SetParent(GraphContainer, false);

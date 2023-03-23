@@ -23,7 +23,6 @@ public class MoistureContent : MonoBehaviour
     {
         toggleGroup = GetComponent<ToggleGroup>();
         lineRenderer = Line.GetComponent<LineRenderer>();
-        Debug.Log(GraphCanvas.activeSelf);
         if (!GraphCanvas.activeSelf)
         {
             Line.GetComponent<LineAnimator>().startParallel();

@@ -12151,10 +12151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a6b6bf9a7781249ab21d81214b4dab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  equationsCanvas: {fileID: 0}
-  InfoCanvas: {fileID: 1444036671}
-  GraphCanvas: {fileID: 800320517}
-  equationsFlag: 0
 --- !u!1 &1429260729
 GameObject:
   m_ObjectHideFlags: 0
@@ -17605,6 +17601,7 @@ MonoBehaviour:
   - 2.5
   Line: {fileID: 1256690631}
   GraphCanvas: {fileID: 1409553099}
+  xinText: {fileID: 728220564}
 --- !u!1 &1966821859
 GameObject:
   m_ObjectHideFlags: 0
@@ -17640,7 +17637,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -185.9, y: 48}
+  m_AnchoredPosition: {x: -185.9, y: 35.8}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1966821861
@@ -17663,7 +17660,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Loading of feed with water (kg<sub><b>H<sub>2</sub>o</b></sub>/kg<sub><b>dr.s</b></sub>)
+  m_text: Final loading of feed with water (kg<sub><b>H<sub>2</sub>o</b></sub>/kg<sub><b>dr.s</b></sub>)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
   m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}

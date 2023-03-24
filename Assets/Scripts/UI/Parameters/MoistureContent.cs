@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class MoistureContent : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class MoistureContent : MonoBehaviour
     public GameObject Line;
     public GameObject GraphCanvas;
     private LineRenderer lineRenderer;
+    [SerializeField] private TextMeshProUGUI xinText;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +41,7 @@ public class MoistureContent : MonoBehaviour
 
     public void Button1Click()
     {
+        xinText.text = "<b>8 kg<sub><b>H<sub>2</sub>O</b></sub>/kg<sub><b>dr.s</b></sub></b>";
         xin = 8;
         int index = 0;
         float xout = 0;
@@ -67,6 +70,7 @@ public class MoistureContent : MonoBehaviour
     }
     public void Button2Click()
     {
+        xinText.text = "<b>6 kg<sub><b>H<sub>2</sub>O</b></sub>/kg<sub><b>dr.s</b></sub></b>";
         xin = 6;
         int index = 0;
         float xout = 0;
@@ -93,6 +97,7 @@ public class MoistureContent : MonoBehaviour
     }
     public void Button3Click()
     {
+        xinText.text = "<b>4 kg<sub><b>H<sub>2</sub>O</b></sub>/kg<sub><b>dr.s</b></sub></b>";
         xin = 4;
         int index = 0;
         float xout = 0;
@@ -120,6 +125,7 @@ public class MoistureContent : MonoBehaviour
     }
     public void Button4Click()
     {
+        xinText.text = "<b>3 kg<sub><b>H<sub>2</sub>O</b></sub>/kg<sub><b>dr.s</b></sub></b>";
         xin = 3;
         int index = 0;
         float xout = 0;
@@ -148,6 +154,7 @@ public class MoistureContent : MonoBehaviour
     }
     public void Button5Click()
     {
+        xinText.text = "<b>2 kg<sub><b>H<sub>2</sub>O</b></sub>/kg<sub><b>dr.s</b></sub></b>";
         xin = 2;
         int index = 0;
         float xout = 0;

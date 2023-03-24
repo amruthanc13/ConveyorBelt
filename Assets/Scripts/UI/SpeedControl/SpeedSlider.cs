@@ -51,23 +51,25 @@ public class SpeedSlider : MonoBehaviour
 
             case 1:
                 GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().speed = 0.1f;
-
                 GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().repeatTime = 0.15f;
+                GameObject.Find("Line").GetComponent<LineAnimator>().animationDuration = 106f;
+
                 break;
             case 2:
                 GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().speed = 0.2f;
-
                 GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().repeatTime = 0.06f;
+                GameObject.Find("Line").GetComponent<LineAnimator>().animationDuration = 53f;
+
                 break;
             case 3:
                 GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().speed = 0.3f;
-
                 GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().repeatTime = 0.05f;
+                GameObject.Find("Line").GetComponent<LineAnimator>().animationDuration = 35.3f;
                 break;
             case 4:
                 GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().speed = 0.4f;
-
                 GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().repeatTime = 0.042f;
+                GameObject.Find("Line").GetComponent<LineAnimator>().animationDuration = 26.5f;
                 break;
             default:
                 break;

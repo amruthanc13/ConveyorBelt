@@ -54,11 +54,14 @@ public class MoreController : MonoBehaviour
     {
         if(!graph)
         {
-            GraphCanvas.SetActive(false);
+            //GraphCanvas.SetActive(false);
+            GraphCanvas.transform.position = new Vector3(GraphCanvas.transform.position.x - 100, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
+            
             graph = true;
         }
         else{
-            GraphCanvas.SetActive(true);
+            //GraphCanvas.SetActive(true);
+            GraphCanvas.transform.position = new Vector3(GraphCanvas.transform.position.x + 100, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
             graph = false;
         }
     }

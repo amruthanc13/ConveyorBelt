@@ -70,7 +70,7 @@ public class WindowGraph : MonoBehaviour
             RectTransform dashX = Instantiate(dashTemplateX);
             dashX.SetParent(GraphContainer, false);
             dashX.gameObject.SetActive(true);
-            dashX.anchoredPosition = new Vector2(xPosition, 113.2f);
+            dashX.anchoredPosition = new Vector2(xPosition, 114.2f);
         }
 
         int separatorCount = 10;

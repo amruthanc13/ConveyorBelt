@@ -85,6 +85,7 @@ public class onboarding : MonoBehaviour
 
         panel4.SetActive(true);
         panel5.SetActive(false);
+        GraphCanvas.transform.position = new Vector3(4f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
 
     }
     public void Panel5forwardClick()

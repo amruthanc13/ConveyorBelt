@@ -12,7 +12,9 @@ public class MoreController : MonoBehaviour
     public GameObject ParamsButton;
     public GameObject moreButton;
     public GameObject GraphCanvas;
+    public GameObject GraphContainer;
     public GameObject ParamCanvas;
+    public GameObject InfoCanvas;
     public GameObject onboardingCanvas;
     // public GameObject lessButton;
     private bool more = false;
@@ -55,12 +57,14 @@ public class MoreController : MonoBehaviour
         {
             //GraphCanvas.SetActive(false);
             GraphCanvas.transform.position = new Vector3(-96f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
-            
+            GraphContainer.transform.position = new Vector3(102.75f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
             graph = true;
         }
         else{
             //GraphCanvas.SetActive(true);
             GraphCanvas.transform.position = new Vector3(4f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
+            GraphContainer.transform.position = new Vector3(2.75f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
+            InfoCanvas.SetActive(false);
             graph = false;
         }
     }

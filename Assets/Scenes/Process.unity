@@ -7821,7 +7821,9 @@ MonoBehaviour:
   panel6: {fileID: 650262821}
   ParamCanvas: {fileID: 2135276676}
   GraphCanvas: {fileID: 1409553099}
+  GraphContainer: {fileID: 800320517}
   onBoardingCanvas: {fileID: 705773375}
+  InfoCanvas: {fileID: 1444036671}
 --- !u!1 &712022052
 GameObject:
   m_ObjectHideFlags: 0
@@ -11221,7 +11223,9 @@ MonoBehaviour:
   ParamsButton: {fileID: 2037126834}
   moreButton: {fileID: 162599964}
   GraphCanvas: {fileID: 1409553099}
+  GraphContainer: {fileID: 800320517}
   ParamCanvas: {fileID: 2135276676}
+  InfoCanvas: {fileID: 1444036671}
   onboardingCanvas: {fileID: 705773375}
 --- !u!114 &883915428
 MonoBehaviour:

@@ -12,7 +12,9 @@ public class onboarding : MonoBehaviour
     public GameObject panel6;
     public GameObject ParamCanvas;
     public GameObject GraphCanvas;
+    public GameObject GraphContainer;
     public GameObject onBoardingCanvas;
+    public GameObject InfoCanvas;
 
     // Start is called before the first frame update
     void Start()
@@ -61,6 +63,8 @@ public class onboarding : MonoBehaviour
         panel3.SetActive(false);
         panel4.SetActive(true);
         GraphCanvas.transform.position = new Vector3(4f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
+        GraphContainer.transform.position = new Vector3(2.75f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
+        InfoCanvas.SetActive(false);
 
     }
     public void Panel4BackClick()
@@ -70,6 +74,8 @@ public class onboarding : MonoBehaviour
         panel4.SetActive(false);
         ParamCanvas.SetActive(true);
         GraphCanvas.transform.position = new Vector3(-96f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
+        GraphContainer.transform.position = new Vector3(102.75f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
+
 
     }
     public void Panel4forwardClick()
@@ -78,6 +84,8 @@ public class onboarding : MonoBehaviour
         panel5.SetActive(true);
         panel4.SetActive(false);
         GraphCanvas.transform.position = new Vector3(-96f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
+        GraphContainer.transform.position = new Vector3(102.75f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
+
     }
 
     public void Panel5BackClick()
@@ -86,7 +94,8 @@ public class onboarding : MonoBehaviour
         panel4.SetActive(true);
         panel5.SetActive(false);
         GraphCanvas.transform.position = new Vector3(4f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
-
+        GraphContainer.transform.position = new Vector3(2.75f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
+        InfoCanvas.SetActive(false);
     }
     public void Panel5forwardClick()
     {

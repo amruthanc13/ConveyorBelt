@@ -13,17 +13,16 @@ public class MoreController : MonoBehaviour
     public GameObject moreButton;
     public GameObject GraphCanvas;
     public GameObject ParamCanvas;
+    public GameObject onboardingCanvas;
     // public GameObject lessButton;
     private bool more = false;
     private bool graph = false;
-    private bool param = false;
 
     // Start is called before the first frame update
     void Start()
     {
         more = false;
         graph = true;
-        param = true;
     }
 
     // Update is called once per frame
@@ -67,15 +66,27 @@ public class MoreController : MonoBehaviour
     }
     public void onParamsButtonClick()
     {
-        if (!param)
+
+        if (ParamCanvas.activeSelf)
         {
             ParamCanvas.SetActive(false);
-            param = true;
         }
         else
         {
             ParamCanvas.SetActive(true);
-            param = false;
+        }
+    }
+
+    public void onHelpButtonClick()
+    {
+
+        if (onboardingCanvas.activeSelf)
+        {
+            onboardingCanvas.SetActive(false);
+        }
+        else
+        {
+            onboardingCanvas.SetActive(true);
         }
     }
 }

@@ -9,6 +9,7 @@ public class onboarding : MonoBehaviour
     public GameObject panel3;
     public GameObject panel4;
     public GameObject panel5;
+    public GameObject panel6;
     public GameObject ParamCanvas;
     public GameObject GraphCanvas;
     public GameObject onBoardingCanvas;
@@ -76,6 +77,7 @@ public class onboarding : MonoBehaviour
 
         panel5.SetActive(true);
         panel4.SetActive(false);
+        GraphCanvas.transform.position = new Vector3(-96f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
     }
 
     public void Panel5BackClick()
@@ -83,6 +85,20 @@ public class onboarding : MonoBehaviour
 
         panel4.SetActive(true);
         panel5.SetActive(false);
+
+    }
+    public void Panel5forwardClick()
+    {
+
+        panel6.SetActive(true);
+        panel5.SetActive(false);
+
+    }
+    public void Panel6BackClick()
+    {
+
+        panel5.SetActive(true);
+        panel6.SetActive(false);
 
     }
     public void exitClick()

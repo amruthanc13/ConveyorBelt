@@ -327,8 +327,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Dr.-Ing. David Broneske
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
-  m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
+  m_sharedMaterial: {fileID: -5924337716585601116, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -352,8 +352,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -437,7 +437,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -33, y: 172}
+  m_AnchoredPosition: {x: 26, y: 172}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &574598711
@@ -462,8 +462,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Faculty Co-ordinators
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
-  m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
+  m_sharedMaterial: {fileID: -5924337716585601116, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -604,7 +604,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4, y: 11}
+  m_AnchoredPosition: {x: 30, y: 1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1007803230
@@ -629,8 +629,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Team Members
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
-  m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
+  m_sharedMaterial: {fileID: -5924337716585601116, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -949,7 +949,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19, y: -56}
+  m_AnchoredPosition: {x: -19, y: -44}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1570809622
@@ -983,8 +983,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
-  m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
+  m_sharedMaterial: {fileID: -5924337716585601116, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1008,8 +1008,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1194,8 +1194,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Dr.-Ing. Nicole Vorhauer-Huget
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
-  m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
+  m_sharedMaterial: {fileID: -5924337716585601116, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1219,8 +1219,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1331,8 +1331,8 @@ MonoBehaviour:
 
     Institute for Process Engineering'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
-  m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
+  m_sharedMaterial: {fileID: -5924337716585601116, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1356,8 +1356,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1592,8 +1592,8 @@ MonoBehaviour:
     AG
     Databases & Software Engineering'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
-  m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
+  m_sharedMaterial: {fileID: -5924337716585601116, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1617,8 +1617,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

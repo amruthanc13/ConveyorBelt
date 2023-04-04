@@ -13,6 +13,7 @@ public class onboarding : MonoBehaviour
     public GameObject ParamCanvas;
     public GameObject GraphCanvas;
     public GameObject GraphContainer;
+    public GameObject YOUTGraphContainer;
     public GameObject onBoardingCanvas;
     public GameObject InfoCanvas;
 
@@ -64,6 +65,7 @@ public class onboarding : MonoBehaviour
         panel4.SetActive(true);
         GraphCanvas.transform.position = new Vector3(4f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
         GraphContainer.transform.position = new Vector3(2.75f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
+        YOUTGraphContainer.transform.position = new Vector3(6.93f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
         InfoCanvas.SetActive(false);
 
     }
@@ -75,6 +77,7 @@ public class onboarding : MonoBehaviour
         ParamCanvas.SetActive(true);
         GraphCanvas.transform.position = new Vector3(-96f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
         GraphContainer.transform.position = new Vector3(102.75f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
+        YOUTGraphContainer.transform.position = new Vector3(106.93f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
 
 
     }

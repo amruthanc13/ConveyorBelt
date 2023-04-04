@@ -14,11 +14,13 @@ public class MoistureContent : MonoBehaviour
     private float m = 10f;
     private float xin;
     private int tablelength = 18;
+    private float length;
     private float requiredTableLength;
     public GameObject Line;
     public GameObject GraphCanvas;
     private LineRenderer lineRenderer;
     [SerializeField] private TextMeshProUGUI xinText;
+    [SerializeField] private TextMeshProUGUI lengthText;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +44,7 @@ public class MoistureContent : MonoBehaviour
     public void Button1Click()
     {
         xinText.text = "<b>8 kg<sub><b>H<sub>2</sub>O</b></sub>/kg<sub><b>dr.s</b></sub></b>";
+        
         xin = 8;
         int index = 0;
         float xout = 0;
@@ -67,6 +70,8 @@ public class MoistureContent : MonoBehaviour
         Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
 
+        length = (float)(Ms * (1.5 - xin)) / (-m * 1);
+        lengthText.text = length.ToString() + " m";
     }
     public void Button2Click()
     {
@@ -94,6 +99,8 @@ public class MoistureContent : MonoBehaviour
         }
         Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
+        length = (float)(Ms * (1.5 - xin)) / (-m * 1);
+        lengthText.text = length.ToString() + " m";
     }
     public void Button3Click()
     {
@@ -122,6 +129,8 @@ public class MoistureContent : MonoBehaviour
         }
         Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
+        length = (float)(Ms * (1.5 - xin)) / (-m * 1);
+        lengthText.text = length.ToString() + " m";
     }
     public void Button4Click()
     {
@@ -150,6 +159,8 @@ public class MoistureContent : MonoBehaviour
         }
         Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
+        length = (float)(Ms * (1.5 - xin)) / (-m * 1);
+        lengthText.text = length.ToString() + " m";
 
     }
     public void Button5Click()
@@ -178,6 +189,8 @@ public class MoistureContent : MonoBehaviour
         }
         Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
+        length = (float)(Ms * (1.5 - xin)) / (-m * 1);
+        lengthText.text = length.ToString()+ " m";
 
     }
 

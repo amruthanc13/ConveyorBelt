@@ -6,26 +6,25 @@ public class InfoButtonController : MonoBehaviour
 {
     public GameObject InfoCanvas;
     public GameObject GraphCanvas;
-    private bool info = false;
+    public GameObject YoutGraphCanvas;
 
     // Start is called before the first frame update
     void Start()
     {
-        info = true;
     }
 
     public void onGraphInfoButtonClick()
     {
-        if(!info)
+        if(InfoCanvas.activeSelf)
         {
             InfoCanvas.SetActive(false);
-            GraphCanvas.transform.position = new Vector3(5.16f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
-            info = true;
+            GraphCanvas.transform.position = new Vector3(2.75f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
+            YoutGraphCanvas.transform.position = new Vector3(6.93f, YoutGraphCanvas.transform.position.y, YoutGraphCanvas.transform.position.z);
         }
         else{
             InfoCanvas.SetActive(true);
-            GraphCanvas.transform.position = new Vector3(105.16f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
-            info = false;
+            GraphCanvas.transform.position = new Vector3(102.75f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
+            YoutGraphCanvas.transform.position = new Vector3(106.93f, YoutGraphCanvas.transform.position.y, YoutGraphCanvas.transform.position.z);
         }
     }
 }

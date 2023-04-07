@@ -8,6 +8,7 @@ public class conveyor_plane : MonoBehaviour
     Renderer rend;
     public float repeatTime = 0.06f;
     public int multiplier = 6;
+    public float distanceMultiplier = 2f;
     // Start is called before the first frame update
     void Start()
     {

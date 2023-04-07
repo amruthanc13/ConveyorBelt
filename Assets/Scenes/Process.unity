@@ -6481,7 +6481,7 @@ RectTransform:
   m_Children:
   - {fileID: 486920311}
   m_Father: {fileID: 1188431573}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14665,7 +14665,7 @@ RectTransform:
   m_Children:
   - {fileID: 439548694}
   m_Father: {fileID: 1407002753}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -25987,8 +25987,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "X<sub>out</sub> = X<sub>in</sub> + <b><u>L(-\u1E41<sub><b>ev,1</b></sub>).
-    W<sub>dr</sub></u>\n                        \u1E40<sub>s</sub></b>\n       "
+  m_text: "Y<sub>out</sub>= Y<sub>in</sub> + <b><u>\u1E40<sub>s</sub></b>( X<sub>in</sub>
+    - X<sub>out</sub> )\n                        \u1E40<sub>g</sub></b>\n       "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
   m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}
@@ -30124,7 +30124,7 @@ RectTransform:
   m_Children:
   - {fileID: 558858223}
   m_Father: {fileID: 2027646145}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

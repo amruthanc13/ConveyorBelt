@@ -18,6 +18,7 @@ public class MoistureContent : MonoBehaviour
     private float requiredTableLength;
     public GameObject Line;
     public GameObject GraphCanvas;
+    private GameObject plane;
     private LineRenderer lineRenderer;
     [SerializeField] private TextMeshProUGUI xinText;
     [SerializeField] private TextMeshProUGUI lengthText;
@@ -25,6 +26,7 @@ public class MoistureContent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        plane = GameObject.Find("conveyor_plane");
         toggleGroup = GetComponent<ToggleGroup>();
         lineRenderer = Line.GetComponent<LineRenderer>();
         if (!GraphCanvas.activeSelf)
@@ -72,6 +74,8 @@ public class MoistureContent : MonoBehaviour
 
         length = (float)(Ms * (1.5 - xin)) / (-m * 1);
         lengthText.text = length.ToString() + " m";
+
+        plane.GetComponent<conveyor_plane>().distanceMultiplier = 4f;
     }
     public void Button2Click()
     {
@@ -101,6 +105,8 @@ public class MoistureContent : MonoBehaviour
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
         length = (float)(Ms * (1.5 - xin)) / (-m * 1);
         lengthText.text = length.ToString() + " m";
+
+        plane.GetComponent<conveyor_plane>().distanceMultiplier = 4f;
     }
     public void Button3Click()
     {
@@ -131,6 +137,8 @@ public class MoistureContent : MonoBehaviour
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
         length = (float)(Ms * (1.5 - xin)) / (-m * 1);
         lengthText.text = length.ToString() + " m";
+
+        plane.GetComponent<conveyor_plane>().distanceMultiplier = 2f;
     }
     public void Button4Click()
     {
@@ -161,6 +169,7 @@ public class MoistureContent : MonoBehaviour
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
         length = (float)(Ms * (1.5 - xin)) / (-m * 1);
         lengthText.text = length.ToString() + " m";
+        plane.GetComponent<conveyor_plane>().distanceMultiplier = 1.5f;
 
     }
     public void Button5Click()
@@ -191,6 +200,7 @@ public class MoistureContent : MonoBehaviour
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
         length = (float)(Ms * (1.5 - xin)) / (-m * 1);
         lengthText.text = length.ToString()+ " m";
+        plane.GetComponent<conveyor_plane>().distanceMultiplier = 0.4f;
 
     }
 

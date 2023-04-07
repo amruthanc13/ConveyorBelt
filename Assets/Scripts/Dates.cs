@@ -17,6 +17,7 @@ public class Dates : MonoBehaviour
     public Color colorIni = Color.white;
     public Color colorFin = Color.green;
     public float duration = 1000f;
+    public float distanceMultiplier = 4f;
     Color lerpedColor = Color.white;
     private float t = 0;
     private bool flag;
@@ -47,6 +48,7 @@ public class Dates : MonoBehaviour
         targetScale = startScale * 0.75f;
 
         targetMat = Resources.Load("dates_texture", typeof(Material)) as Material;
+        distanceMultiplier = plane.GetComponent<conveyor_plane>().distanceMultiplier;
 
 
     }
@@ -69,7 +71,7 @@ public class Dates : MonoBehaviour
 
             distanceTravelled += Vector3.Distance(transform.position, lastPosition);
             lastPosition = transform.position;
-            t = distanceTravelled / planeLength;
+            t = distanceTravelled / (planeLength* distanceMultiplier);
 
         }
     }

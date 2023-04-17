@@ -64,13 +64,13 @@ public class WindowGraph : MonoBehaviour
             RectTransform labelX = Instantiate(labelTemplateX);
             labelX.SetParent(GraphContainer, false);
             labelX.gameObject.SetActive(true);
-            labelX.anchoredPosition = new Vector2(xPosition, -2f);
+            labelX.anchoredPosition = new Vector2(xPosition, -2.1f);
             labelX.GetComponent<TextMeshProUGUI>().text = (i*2).ToString();
 
             RectTransform dashX = Instantiate(dashTemplateX);
             dashX.SetParent(GraphContainer, false);
             dashX.gameObject.SetActive(true);
-            dashX.anchoredPosition = new Vector2(xPosition, 114.2f);
+            dashX.anchoredPosition = new Vector2(xPosition, 130.7f);
         }
 
         int separatorCount = 10;
@@ -80,7 +80,7 @@ public class WindowGraph : MonoBehaviour
             labelY.SetParent(GraphContainer, false);
             labelY.gameObject.SetActive(true);
             float normalizedValue = i * 1f / separatorCount;
-            labelY.anchoredPosition = new Vector2(-5f, (normalizedValue*graphHeight)+2f);
+            labelY.anchoredPosition = new Vector2(-5f, (normalizedValue*graphHeight)+5f);
             labelY.GetComponent<TextMeshProUGUI>().text = (normalizedValue*yMaximum/10).ToString();
 
             RectTransform dashY = Instantiate(dashTemplateY);

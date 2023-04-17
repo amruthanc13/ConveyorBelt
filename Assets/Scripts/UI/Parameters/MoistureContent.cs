@@ -155,13 +155,13 @@ public class MoistureContent : MonoBehaviour
 
         float xSize = 40f;
         float yMaximum = 100f;
-        float graphHeight = 230f;
+        float graphHeight = 260f;
 
         for (int i = 0; i < xoutList.Count; i++)
         {
             float xPosition = i * xSize;
             float yPosition = (xoutList[i] / yMaximum) * 10 * graphHeight;
-           // Debug.Log("xposition :" + xPosition + "Y position " + yPosition);
+            Debug.Log("xposition :" + xPosition + "Y position " + yPosition);
             lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
             Line.GetComponent<LineAnimator>().linePoints[i] = new Vector3(xPosition, yPosition, 0);
         }

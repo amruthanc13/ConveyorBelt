@@ -50,13 +50,13 @@ public class YoutGraph : MonoBehaviour
             RectTransform labelX = Instantiate(labelTemplateX);
             labelX.SetParent(GraphContainer, false);
             labelX.gameObject.SetActive(true);
-            labelX.anchoredPosition = new Vector2(xPosition, -2f);
+            labelX.anchoredPosition = new Vector2(xPosition, -2.1f);
             labelX.GetComponent<TextMeshProUGUI>().text = (i * 2).ToString();
 
             RectTransform dashX = Instantiate(dashTemplateX);
             dashX.SetParent(GraphContainer, false);
             dashX.gameObject.SetActive(true);
-            dashX.anchoredPosition = new Vector2(xPosition, 114.2f);
+            dashX.anchoredPosition = new Vector2(xPosition, 130.7f);
         }
        // Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
        // Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];

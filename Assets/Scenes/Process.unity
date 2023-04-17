@@ -4422,7 +4422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &420701253
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6481,7 +6481,7 @@ RectTransform:
   m_Children:
   - {fileID: 486920311}
   m_Father: {fileID: 1188431573}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10985,14 +10985,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9528302, g: 0.9528302, b: 0.9528302, a: 0.38431373}
+  m_Color: {r: 0.7176471, g: 0.7568628, b: 0.77647066, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 84c20dad632f81241b9cec282b318499, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7ee501338e5c4e047994ab41ba805f6a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14192,7 +14192,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Buttons on the bottom menu lets you to start the process, speed up the
     process, shows parameter infomation, shows graph and exit the application. \nYou
-    can hover on the buttons to see what it does!!"
+    can hover on the buttons to see what it does!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
   m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}
@@ -14665,7 +14665,7 @@ RectTransform:
   m_Children:
   - {fileID: 439548694}
   m_Father: {fileID: 1407002753}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -22017,7 +22017,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<b>Welcome to Conveyor belt dryer !!</b>
+  m_text: '<b>Welcome to Conveyor belt dryer !</b>
 
 
     Let''s get started. You
@@ -25946,7 +25946,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1874566784
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30124,7 +30124,7 @@ RectTransform:
   m_Children:
   - {fileID: 558858223}
   m_Father: {fileID: 2027646145}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -31177,14 +31177,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9528302, g: 0.9528302, b: 0.9528302, a: 0.38431373}
+  m_Color: {r: 0.7176471, g: 0.7568628, b: 0.77647066, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 84c20dad632f81241b9cec282b318499, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 74c5660aaafdf7a4cac86ed1e69280f4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -32161,7 +32161,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Congrats!! You have completed the basic tutorial of the main features and
+  m_text: Congrats! You have completed the basic tutorial of the main features and
     interactions in the application. Click on close button on top right to close
     and return to the visualization.
   m_isRightToLeft: 0

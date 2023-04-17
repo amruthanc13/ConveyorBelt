@@ -12495,6 +12495,7 @@ MonoBehaviour:
   pauseIcon: {fileID: 21300000, guid: 8eb9669081de23044bab500123db153d, type: 3}
   refreshButton: {fileID: 1387785564}
   ParamCanvas: {fileID: 2135276676}
+  onBoardingCanvas: {fileID: 705773375}
   toolTip: {fileID: 1519277398}
 --- !u!114 &883915427
 MonoBehaviour:

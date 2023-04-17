@@ -89,11 +89,14 @@ public class MoreController : MonoBehaviour
 
         if (onboardingCanvas.activeSelf)
         {
+            Debug.Log(onboardingCanvas.activeSelf);
             onboardingCanvas.SetActive(false);
         }
         else
         {
+            Debug.Log(onboardingCanvas.activeSelf);
             onboardingCanvas.SetActive(true);
         }
     }
+
 }

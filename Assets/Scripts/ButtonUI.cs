@@ -16,6 +16,7 @@ public class ButtonUI : MonoBehaviour
     public void SimulationButton()
     {
         SceneManager.LoadScene(Process);
+        PlayerPrefs.SetInt("refreshed", 0);
     }
     public void CreditsButton()
     {

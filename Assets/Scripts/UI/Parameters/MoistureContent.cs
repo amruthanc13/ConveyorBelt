@@ -58,13 +58,13 @@ public class MoistureContent : MonoBehaviour
         }
 
         float xSize = 40f;
-        float yMaximum = 100f;
-        float graphHeight = 230f;
+        float yMaximum = 10f;
+        float graphHeight = 259.99f;
 
         for (int i = 0; i < xoutList.Count; i++)
         {
-            float xPosition = i * xSize;
-            float yPosition = (xoutList[i] / yMaximum) * 10 * graphHeight;
+            float xPosition = i  * xSize;
+            float yPosition = ((xoutList[i] / yMaximum) * graphHeight) - 15f;
            
             lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
             Line.GetComponent<LineAnimator>().linePoints[i] = new Vector3(xPosition, yPosition, 0);
@@ -91,13 +91,13 @@ public class MoistureContent : MonoBehaviour
         }
 
         float xSize = 40f;
-        float yMaximum = 100f;
-        float graphHeight = 230f;
+        float yMaximum = 10f;
+        float graphHeight = 259.99f;
 
         for (int i = 0; i < xoutList.Count; i++)
         {
             float xPosition = i * xSize;
-            float yPosition = (xoutList[i] / yMaximum) * 10 * graphHeight;
+            float yPosition = ((xoutList[i] / yMaximum) * graphHeight) - 15f;
             lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
             Line.GetComponent<LineAnimator>().linePoints[i] = new Vector3(xPosition, yPosition, 0);
         }
@@ -122,16 +122,16 @@ public class MoistureContent : MonoBehaviour
         }
 
         float xSize = 40f;
-        float yMaximum = 100f;
-        float graphHeight = 230f;
+        float yMaximum = 10f;
+        float graphHeight = 259.99f;
 
         for (int i = 0; i < xoutList.Count; i++)
         {
             float xPosition = i * xSize;
-            float yPosition = (xoutList[i] / yMaximum) * 10 * graphHeight;
-           // Debug.Log("xposition :" + xPosition + "Y position " + yPosition);
+            float yPosition = ((xoutList[i] / yMaximum) * graphHeight) - 15f;
             lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
             Line.GetComponent<LineAnimator>().linePoints[i] = new Vector3(xPosition, yPosition, 0);
+
         }
         Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
@@ -154,13 +154,13 @@ public class MoistureContent : MonoBehaviour
         }
 
         float xSize = 40f;
-        float yMaximum = 100f;
-        float graphHeight = 260f;
+        float yMaximum = 10f;
+        float graphHeight = 259.99f;
 
         for (int i = 0; i < xoutList.Count; i++)
         {
             float xPosition = i * xSize;
-            float yPosition = (xoutList[i] / yMaximum) * 10 * graphHeight;
+            float yPosition = ((xoutList[i] / yMaximum) * graphHeight) - 15f;
             Debug.Log("xposition :" + xPosition + "Y position " + yPosition);
             lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
             Line.GetComponent<LineAnimator>().linePoints[i] = new Vector3(xPosition, yPosition, 0);
@@ -186,13 +186,13 @@ public class MoistureContent : MonoBehaviour
         }
 
         float xSize = 40f;
-        float yMaximum = 100f;
-        float graphHeight = 230f;
+        float yMaximum = 10f;
+        float graphHeight = 259.99f;
 
         for (int i = 0; i < xoutList.Count; i++)
         {
             float xPosition = i * xSize;
-            float yPosition = (xoutList[i] / yMaximum) * 10 * graphHeight;
+            float yPosition = ((xoutList[i] / yMaximum) * graphHeight) - 15f;
             lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
             Line.GetComponent<LineAnimator>().linePoints[i] = new Vector3(xPosition, yPosition, 0);
         }

@@ -25,8 +25,7 @@ public class PlayController : MonoBehaviour
         onboarding = GameObject.Find("Onboarding");
 
         int refresh = PlayerPrefs.GetInt("refreshed", 0);
-        if (refresh != null) 
-        {
+
             if (refresh == 1) 
             {
                 //If the scene is refreshed, then do not show intro
@@ -37,7 +36,6 @@ public class PlayController : MonoBehaviour
                 //If the scene is loaded from home page, then show intro
                 onboarding.SetActive(true);
             }
-        }
     }
 
     public void playProcess()

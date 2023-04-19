@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
+using System.Linq;
 
 public class YoutGraph : MonoBehaviour
 {
@@ -13,6 +15,11 @@ public class YoutGraph : MonoBehaviour
     public GameObject Line;
     private LineRenderer lineRenderer;
 
+    public List<float> youtList = new List<float>() { .038f, .04f, .042f, .044f, .046f, 0.048f, 0.05f, .052f, 0.054f, .056f }; 
+
+
+    public ToggleGroup powertoggleGroup;
+    public string powertoggle = "power3";
 
     private void Awake()
     {
@@ -23,16 +30,69 @@ public class YoutGraph : MonoBehaviour
         dashTemplateY = GraphContainer.Find("YOUTdashTemplateY").GetComponent<RectTransform>();
         lineRenderer = Line.GetComponent<LineRenderer>();
 
-        // List<int>  valueList = new List<int>() {5, 98, 56,45,30,22,17};
-        //List<int>  valueList = new List<int>() {1,2,3,4,5,6,7,8,9,10};
+        foreach (Toggle toggle in powertoggleGroup.GetComponentsInChildren<Toggle>())
+        {
+            toggle.onValueChanged.AddListener(delegate { OnToggleValueChanged(toggle); });
+            toggle.onValueChanged.AddListener(delegate { calculateValues(); });
+        }
+
+
         List<float> valueList = new List<float>() { .038f, .04f, .042f, .044f, .046f, 0.048f, 0.05f, .052f, 0.054f,.056f };
 
 
-        ShowGraph(valueList);
+        ShowGraph(youtList);
         // CreateCircle(new Vector2(200,200));
     }
 
+    public void OnToggleValueChanged(Toggle changedToggle)
+    {
+        // Do something with the changed toggle
+        if (changedToggle.isOn)
+        {
+            Debug.Log(changedToggle.name + " is now selected");
+            powertoggle = changedToggle.name;
+        }
+        else
+        {
+            Debug.Log(changedToggle.name + " is now deselected");
+        }
+    }
 
+    public void calculateValues()
+    {
+        float ms = 120f;
+        float mg = 10000f;
+        float yin = 0.038f;
+        List<float> xoutList = new List<float>() { 0f, .1667f, .333f, .5f, .666f, 0.833f, 1f, 1.666f, 1.333f, 1.5f };
+
+        switch (powertoggle)
+        {
+            case "power1":
+                mg = 20000;
+                break;
+            case "power2":
+                mg = 15000;
+                break;
+            case "power3":
+                mg = 10000;
+                break;
+            case "power4":
+                mg = 5000;
+                break;
+            default:
+                mg = 10000;
+                break;
+
+        }
+        Debug.Log(mg);
+        float yout = 0;
+          for (int i = 0; i < 10; i ++)
+          {
+              yout = ((ms / mg) * xoutList[i]) + yin;
+              youtList[i] = yout;
+            Debug.Log(yout);
+          }
+    }
 
     private void ShowGraph(List<float> valueList)
     {
@@ -40,11 +100,11 @@ public class YoutGraph : MonoBehaviour
         float yMaximum = 100f;
         float graphHeight = GraphContainer.sizeDelta.y;
         float graphWidth = GraphContainer.sizeDelta.x;
-        //GameObject lastCircleGameObject = null;
+
         for (int i = 0; i < valueList.Count; i++)
         {
             float xPosition = i * xSize;
-            float yPosition = (valueList[i] / yMaximum) * 1000 * graphHeight;
+            float yPosition = ((valueList[i] / yMaximum) * 1000 * graphHeight) -15f; 
             lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
 
             RectTransform labelX = Instantiate(labelTemplateX);

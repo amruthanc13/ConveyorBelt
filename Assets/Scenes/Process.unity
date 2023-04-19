@@ -23718,7 +23718,6 @@ MonoBehaviour:
   - 0.052
   - 0.054
   - 0.056
-  xoutList: []
   powertoggleGroup: {fileID: 1760399904}
   powertoggle: power3
 --- !u!1 &1720525602
@@ -27166,7 +27165,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Loading of feed with water (kg<sub><b>H<sub>2</sub>o</b></sub>/kg<sub><b>dr.s</b></sub>)
+  m_text: Loading of product with water (kg<sub><b>H<sub>2</sub>o</b></sub>/kg<sub><b>dr.s</b></sub>)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
   m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}

@@ -1589,7 +1589,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Institute for Technical and Business Information Systems
 
-    AG Databases
+    AG Database
     & Software Engineering'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}

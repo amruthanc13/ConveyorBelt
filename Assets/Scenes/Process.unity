@@ -21190,9 +21190,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: In the above Parameter Tab, you can set the loading of feed with water
+  m_text: 'In the above Parameter Tab, you can set the loading of feed with water
     to different values. Also can find details on the air flow and length and width
     of conveyor belt.
+
+    <b>NOTE</b>: Once the process is started, you cannot change
+    parameter settings.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
   m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}

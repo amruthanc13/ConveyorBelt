@@ -39,7 +39,18 @@ public class DateSpawner : MonoBehaviour
     //Vector3 pos = new Vector3()
     {
         Vector3 pos = new Vector3(transform.position.x, transform.position.y, UnityEngine.Random.Range(transform.position.z - 2, transform.position.z + 2));
-        Instantiate(datePrefab, pos, Quaternion.identity);
+        GameObject cloneDates =Instantiate(datePrefab, pos, Quaternion.identity);
+        if(GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().speed == 0.1f) {
+            Destroy(cloneDates, 100);
+        } else if(GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().speed == 0.2f) {
+            Debug.Log("speed is 1");
+            Destroy(cloneDates, 60);
+        } else if(GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().speed == 0.3f) {
+            Destroy(cloneDates, 50);
+        } else if(GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().speed == 0.4f) {
+            Destroy(cloneDates, 40);
+        }
+        // Destroy(cloneDates, 20);
     }
 
 

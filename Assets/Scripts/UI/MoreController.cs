@@ -63,6 +63,7 @@ public class MoreController : MonoBehaviour
             GraphContainer.transform.position = new Vector3(-98.24f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
             YOUTGraphContainer.transform.position = new Vector3(-93.25f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
             graph = true;
+            PlayerPrefs.SetInt("graphTab", 0);
         }
         else{
             //GraphCanvas.SetActive(true);
@@ -71,6 +72,7 @@ public class MoreController : MonoBehaviour
             YOUTGraphContainer.transform.position = new Vector3(6.60f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
             InfoCanvas.SetActive(false);
             graph = false;
+            PlayerPrefs.SetInt("graphTab", 1);
         }
     }
     public void onParamsButtonClick()
@@ -79,10 +81,12 @@ public class MoreController : MonoBehaviour
         if (ParamCanvas.activeSelf)
         {
             ParamCanvas.SetActive(false);
+            PlayerPrefs.SetInt("paramTab", 0);
         }
         else
         {
             ParamCanvas.SetActive(true);
+            PlayerPrefs.SetInt("paramTab", 1);
         }
     }
 

@@ -14,6 +14,7 @@ public class PlayController : MonoBehaviour
     public Sprite pauseIcon;
     public GameObject refreshButton;
     public GameObject ParamCanvas;
+    public GameObject GraphCanvas;
     public GameObject onboarding;
     public TMP_Text toolTip;
 
@@ -25,17 +26,36 @@ public class PlayController : MonoBehaviour
         onboarding = GameObject.Find("Onboarding");
 
         int refresh = PlayerPrefs.GetInt("refreshed", 0);
+        int paramTab = PlayerPrefs.GetInt("paramTab", 0);
+        int graphTab = PlayerPrefs.GetInt("graphTab", 0);
 
-            if (refresh == 1) 
+        if (refresh == 1) 
+        {
+            //If the scene is refreshed, then do not show intro
+            onboarding.SetActive(false);
+            if (paramTab == 1)
             {
-                //If the scene is refreshed, then do not show intro
-                onboarding.SetActive(false);
+                ParamCanvas.SetActive(true);
             }
             else
             {
-                //If the scene is loaded from home page, then show intro
-                onboarding.SetActive(true);
+                ParamCanvas.SetActive(false);
             }
+
+            if (graphTab == 1)
+            {
+                GraphCanvas.transform.position = new Vector3(4f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
+            }
+            else
+            {
+                GraphCanvas.transform.position = new Vector3(-96f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
+            }
+        }
+        else
+        {
+            //If the scene is loaded from home page, then show intro
+            onboarding.SetActive(true);
+        }
     }
 
     public void playProcess()

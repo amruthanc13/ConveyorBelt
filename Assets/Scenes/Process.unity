@@ -13027,7 +13027,8 @@ MonoBehaviour:
   pauseIcon: {fileID: 21300000, guid: 8eb9669081de23044bab500123db153d, type: 3}
   refreshButton: {fileID: 1387785564}
   ParamCanvas: {fileID: 2135276676}
-  onboarding: {fileID: 0}
+  GraphCanvas: {fileID: 1409553099}
+  onboarding: {fileID: 705773375}
   toolTip: {fileID: 1519277398}
 --- !u!114 &883915427
 MonoBehaviour:
@@ -30819,7 +30820,6 @@ MonoBehaviour:
   datePrefab: {fileID: 5420555265806810461, guid: c540e56dd1540834c989f900133b0f6d, type: 3}
   repeatTime: 0
   repeatTimeOld: 0
-  lastPosition: {x: 0, y: 0, z: 0}
 --- !u!4 &2028280991
 Transform:
   m_ObjectHideFlags: 0

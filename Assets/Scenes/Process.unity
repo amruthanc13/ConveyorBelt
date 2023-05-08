@@ -12168,7 +12168,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Initial loading of Air with water, Y<sub><b>in</b><sub>
+  m_text: Initial loading of air with water, Y<sub><b>in</b><sub>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
   m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}

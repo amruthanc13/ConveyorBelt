@@ -13139,9 +13139,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: In the above Graph Tab, you can find dynamic graphical representation between
-    loading of feed with water along the conveyor belt length. Info button gives
-    the details of the equations used to plot the graph.
+  m_text: In the above Graph Tab, you can find a dynamic graphical representation
+    visualizing the loading of feed with water depending on the progress at the conveyor
+    belt. The info button provides details of the equations used to plot the graph.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
   m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}
@@ -14604,9 +14604,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Buttons on the bottom menu lets you to start the process, speed up the
-    process, shows parameter infomation, shows graph and exit the application. \nYou
-    can hover on the buttons to see what it does!"
+  m_text: "Buttons on the bottom menu let you start the process, accelerate the process,
+    show parameter information, show a graph and exit the application. \nYou can
+    hover over the buttons to see what it does!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
   m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}
@@ -21192,11 +21192,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'In the above Parameter Tab, you can set the loading of feed with water
-    to different values. Also can find details on the air flow and length and width
-    of conveyor belt.
+    to different values. Moreover, you can find details on the air-flow and length
+    and width of the conveyor belt.
 
-    <b>NOTE</b>: Once the process is started, you cannot change
-    parameter settings.'
+    <b>NOTE</b>: Once the process is started,
+    you cannot change the parameter settings.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
   m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}
@@ -22238,12 +22238,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<b>Welcome to Conveyor belt dryer !</b>
+  m_text: '<b>Welcome to Conveyor belt dryer!</b>
 
 
-    Let''s get started. You
-    can always close this tutorial by clicking on the black cross on top right corner.
-    Click next icon to move forward.'
+    Let''s get started. You can
+    always close this tutorial by clicking on the black cross in the top-right corner.
+    Click the next icon to move forward.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
   m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}
@@ -22742,8 +22742,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Once you hit play, use arrow buttons in keyboard to navigate around the
-    Room.
+  m_text: Once you hit play, you can navigate around the room using the arrow keys
+    of your keyboard.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
   m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}
@@ -32290,8 +32290,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Congrats! You have completed the basic tutorial of the main features and
-    interactions in the application. Click on close button on top right to close
-    and return to the visualization.
+    interactions in the application. Click on the close button on the top-right to
+    close and return to the visualization.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
   m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}

@@ -374,7 +374,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\n\n\u2022\tVisualization of feed on the conveyor belt with co-current
-    air flow.\r\n\u2022\tShows graphical representation of loading of feed with water
+    airflow.\r\n\u2022\tShows graphical representation of loading of feed with water
     along the conveyor belt length.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e13ef7f00059a5e339f51dbd50b4ad74, type: 2}
@@ -511,12 +511,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "The project focuses on the realistic visualization of one of the most
-    popular chemical processes \u2013 <b>Convective drying technology </b>.The visualization
+    popular chemical processes \u2013 <b>Convective drying technology</b>. The visualization
     is enhanced by graphical representations and supported by textual descriptions.
     The main motive of the project is to help the user visualize this very popular
-    and important process and at the same time give the user in-depth information
+    and important process and, at the same time, give the user in-depth information
     about the execution of the process including the activities that happen at the
-    back end give him a good learning experience."
+    back-end to provide a good learning experience."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e13ef7f00059a5e339f51dbd50b4ad74, type: 2}
   m_sharedMaterial: {fileID: 3582769084208089422, guid: e13ef7f00059a5e339f51dbd50b4ad74, type: 2}

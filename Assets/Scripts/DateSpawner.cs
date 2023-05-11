@@ -43,7 +43,6 @@ public class DateSpawner : MonoBehaviour
         if(GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().speed == 0.1f) {
             Destroy(cloneDates, 100);
         } else if(GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().speed == 0.2f) {
-            Debug.Log("speed is 1");
             Destroy(cloneDates, 60);
         } else if(GameObject.Find("conveyor_plane").GetComponent<conveyor_plane>().speed == 0.3f) {
             Destroy(cloneDates, 50);

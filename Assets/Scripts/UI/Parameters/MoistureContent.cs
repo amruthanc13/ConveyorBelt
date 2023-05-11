@@ -178,7 +178,7 @@ public class MoistureContent : MonoBehaviour
         Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
         length = (float)(Ms * (1.5 - xin)) / (-m * 1);
-        plane.GetComponent<conveyor_plane>().distanceMultiplier = 1.5f;
+        plane.GetComponent<conveyor_plane>().distanceMultiplier = 1f;
 
         warningLength.SetActive(false);
         lengthComponent.SetActive(true);

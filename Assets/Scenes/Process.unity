@@ -2335,7 +2335,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -212.8, y: 21.8}
+  m_AnchoredPosition: {x: -210.2, y: 19.3}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &184295626
@@ -2358,7 +2358,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Air loading with water  (kg<sub><b>H<sub>2</sub>o</b></sub>/kg<sub><b>dr.s</b></sub>)
+  m_text: Air loading with water (Y) (kg<sub><b>H<sub>2</sub>o</b></sub>/kg<sub><b>dr.s</b></sub>)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
   m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}
@@ -2421,7 +2421,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 35.103363, w: 16.937527}
+  m_margin: {x: -4.8610535, y: 0, z: 27.323753, w: 16.937527}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -16212,7 +16212,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Warning! Air saturation reached! Drying beyond this point can cause condensation!
+  m_text: Warning! With the selected process settings, air will reach saturation 
+    at 12 m. Drying beyond this point cause condensation!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
   m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}
@@ -16670,7 +16671,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.30000305, y: 21.762499}
+  m_AnchoredPosition: {x: 0.30000305, y: 26}
   m_SizeDelta: {x: 100, y: -132.775}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!120 &1204559513
@@ -27764,7 +27765,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -219.6, y: -9.2}
+  m_AnchoredPosition: {x: -225, y: 18}
   m_SizeDelta: {x: 220.91, y: 44.83}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1966821861
@@ -27787,7 +27788,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Loading of product with water (kg<sub><b>H<sub>2</sub>o</b></sub>/kg<sub><b>dr.s</b></sub>)
+  m_text: Loading of product with water (X(L)) (kg<sub><b>H<sub>2</sub>o</b></sub>/kg<sub><b>dr.s</b></sub>)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
   m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}
@@ -32969,7 +32970,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 573, y: -25.7}
+  m_AnchoredPosition: {x: 598.8, y: -15.9}
   m_SizeDelta: {x: 300, y: -159.98999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2143258699
@@ -32992,7 +32993,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0.06
+  m_text: 0.062
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a95a56261bd42f149822415437c074a7, type: 2}
   m_sharedMaterial: {fileID: 5345719147105726138, guid: a95a56261bd42f149822415437c074a7, type: 2}
@@ -33055,7 +33056,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -63.296936, y: -19.838783, z: 221.63522, w: 96.57259}
+  m_margin: {x: -102.363846, y: -19.838783, z: 221.63522, w: 96.57259}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

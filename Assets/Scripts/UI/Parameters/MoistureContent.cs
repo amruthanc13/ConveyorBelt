@@ -34,7 +34,7 @@ public class MoistureContent : MonoBehaviour
             Line.GetComponent<LineAnimator>().startParallel();
         }
 
-        Button3Click();
+        Button4Click();
     }
 
     // Update is called once per frame
@@ -161,7 +161,7 @@ public class MoistureContent : MonoBehaviour
         {
             float xPosition = i * xSize;
             float yPosition = ((xoutList[i] / yMaximum) * graphHeight) - 15f;
-            Debug.Log("xposition :" + xPosition + "Y position " + yPosition);
+           // Debug.Log("xposition :" + xPosition + "Y position " + yPosition);
             lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
             Line.GetComponent<LineAnimator>().linePoints[i] = new Vector3(xPosition, yPosition, 0);
         }

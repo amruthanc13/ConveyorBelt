@@ -37,7 +37,7 @@ public class YoutGraph : MonoBehaviour
         }
 
 
-        List<float> valueList = new List<float>() { .038f, .04f, .042f, .044f, .046f, 0.048f, 0.05f, .052f, 0.054f,.056f };
+      //  List<float> valueList = new List<float>() { .038f, .04f, .042f, .044f, .046f, 0.048f, 0.05f, .052f, 0.054f,.056f };
 
 
         ShowGraph(youtList);
@@ -49,12 +49,12 @@ public class YoutGraph : MonoBehaviour
         // Do something with the changed toggle
         if (changedToggle.isOn)
         {
-            Debug.Log(changedToggle.name + " is now selected");
+            //Debug.Log(changedToggle.name + " is now selected");
             powertoggle = changedToggle.name;
         }
         else
         {
-            Debug.Log(changedToggle.name + " is now deselected");
+            //Debug.Log(changedToggle.name + " is now deselected");
         }
     }
 
@@ -63,7 +63,7 @@ public class YoutGraph : MonoBehaviour
         float ms = 120f;
         float mg = 10000f;
         float yin = 0.038f;
-        List<float> xoutList = new List<float>() { 0f, .1667f, .333f, .5f, .666f, 0.833f, 1f, 1.666f, 1.333f, 1.5f };
+        List<float> xoutList = new List<float>() { 0f, .1667f, .333f, .5f, .666f, 0.833f, 1f, 1.1666f, 1.333f, 1.5f };
 
         switch (powertoggle)
         {
@@ -103,6 +103,8 @@ public class YoutGraph : MonoBehaviour
 
         for (int i = 0; i < valueList.Count; i++)
         {
+            Debug.Log("Value list inside showgraph");
+            Debug.Log(valueList[i]);
             float xPosition = i * xSize;
             float yPosition = ((valueList[i] / yMaximum) * 1000 * graphHeight) -15f; 
             lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));

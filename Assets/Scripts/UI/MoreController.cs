@@ -19,13 +19,11 @@ public class MoreController : MonoBehaviour
     public GameObject onboardingCanvas;
     // public GameObject lessButton;
     private bool more = false;
-    private bool graph = false;
 
     // Start is called before the first frame update
     void Start()
     {
         more = false;
-        graph = true;
     }
 
     // Update is called once per frame
@@ -54,15 +52,14 @@ public class MoreController : MonoBehaviour
 
     public void onGraphButtonClick()
     {
-        
-        if (!graph)
+
+        if (GraphCanvas.transform.position.x == 4f)
         {
             //GraphCanvas.SetActive(false);
             
             GraphCanvas.transform.position = new Vector3(-96f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
             GraphContainer.transform.position = new Vector3(-98.24f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
             YOUTGraphContainer.transform.position = new Vector3(-93.25f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
-            graph = true;
             PlayerPrefs.SetInt("graphTab", 0);
         }
         else{
@@ -71,7 +68,6 @@ public class MoreController : MonoBehaviour
             GraphContainer.transform.position = new Vector3(1.76f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
             YOUTGraphContainer.transform.position = new Vector3(6.60f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
             InfoCanvas.SetActive(false);
-            graph = false;
             PlayerPrefs.SetInt("graphTab", 1);
         }
     }

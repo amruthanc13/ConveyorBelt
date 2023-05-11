@@ -75,7 +75,7 @@ public class MoistureContent : MonoBehaviour
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
 
         length = (float)(Ms * (1.5 - xin)) / (-m * 1);
-        lengthText.text = "Warning! The length of the conveyor belt required for the feed to reach X(L)= 1.5 kg<sub><b>H<sub>2</sub>O</b></sub>/kg<sub><b>dr.s</b></sub> is " + length.ToString() + " m";
+        lengthText.text = "The length of the conveyor belt is 18m. With the selected process settings, the required length of the feed to reach X(L)= 1.5 kg<sub><b>H<sub>2</sub>O</b></sub>/kg<sub><b>dr.s</b></sub> is " + length.ToString() + " m";
 
         plane.GetComponent<conveyor_plane>().distanceMultiplier = 4f;
         warningLength.SetActive(true);
@@ -108,7 +108,7 @@ public class MoistureContent : MonoBehaviour
         Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
         length = (float)(Ms * (1.5 - xin)) / (-m * 1);
-        lengthText.text = "Warning! The length of the conveyor belt required for the feed to reach X(L)= 1.5 kg<sub><b>H<sub>2</sub>O</b></sub>/kg<sub><b>dr.s</b></sub> is " + length.ToString() + " m";
+        lengthText.text = "The length of the conveyor belt is 18m. With the selected process settings, the required length of the feed to reach X(L)= 1.5 kg<sub><b>H<sub>2</sub>O</b></sub>/kg<sub><b>dr.s</b></sub> is " + length.ToString() + " m";
 
         plane.GetComponent<conveyor_plane>().distanceMultiplier = 4f;
 
@@ -143,7 +143,7 @@ public class MoistureContent : MonoBehaviour
         Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
         length = (float)(Ms * (1.5 - xin)) / (-m * 1);
-        lengthText.text = "Warning! The length of the conveyor belt required for the feed to reach X(L)= 1.5 kg<sub><b>H<sub>2</sub>O</b></sub>/kg<sub><b>dr.s</b></sub> is " + length.ToString() + " m";
+        lengthText.text = "The length of the conveyor belt is 18m. With the selected process settings, the required length of the feed to reach X(L)= 1.5 kg<sub><b>H<sub>2</sub>O</b></sub>/kg<sub><b>dr.s</b></sub> is " + length.ToString() + " m";
 
         plane.GetComponent<conveyor_plane>().distanceMultiplier = 2f;
 
@@ -178,7 +178,6 @@ public class MoistureContent : MonoBehaviour
         Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
         length = (float)(Ms * (1.5 - xin)) / (-m * 1);
-        lengthText.text = "Warning! The length of the conveyor belt required for the feed to reach X(L)= 1.5 kg<sub><b>H<sub>2</sub>O</b></sub>/kg<sub><b>dr.s</b></sub> is " + length.ToString() + " m";
         plane.GetComponent<conveyor_plane>().distanceMultiplier = 1.5f;
 
         warningLength.SetActive(false);
@@ -212,7 +211,7 @@ public class MoistureContent : MonoBehaviour
         Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
         length = (float)(Ms * (1.5 - xin)) / (-m * 1);
-        lengthText.text = "Warning! The length of the conveyor belt required for the feed to reach X(L)= 1.5 kg<sub><b>H<sub>2</sub>O</b></sub>/kg<sub><b>dr.s</b></sub> is " + length.ToString()+ " m";
+        lengthText.text = "The length of the conveyor belt is 18m. With the selected process settings, the required length of the feed to reach X(L)= 1.5 kg<sub><b>H<sub>2</sub>O</b></sub>/kg<sub><b>dr.s</b></sub> is " + length.ToString() + " m";
         plane.GetComponent<conveyor_plane>().distanceMultiplier = 0.4f;
 
         warningLength.SetActive(true);

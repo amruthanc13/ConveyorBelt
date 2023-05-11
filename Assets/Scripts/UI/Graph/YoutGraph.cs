@@ -13,6 +13,7 @@ public class YoutGraph : MonoBehaviour
     private RectTransform dashTemplateX;
     private RectTransform dashTemplateY;
     public GameObject Line;
+    public GameObject warning;
     private LineRenderer lineRenderer;
 
     public List<float> youtList = new List<float>() { .038f, .04f, .042f, .044f, .046f, 0.048f, 0.05f, .052f, 0.054f, .056f }; 
@@ -69,18 +70,23 @@ public class YoutGraph : MonoBehaviour
         {
             case "power1":
                 mg = 20000;
+                warning.SetActive(false);
                 break;
             case "power2":
                 mg = 15000;
+                warning.SetActive(false);
                 break;
             case "power3":
                 mg = 10000;
+                warning.SetActive(false);
                 break;
             case "power4":
                 mg = 5000;
+                warning.SetActive(true);
                 break;
             default:
                 mg = 10000;
+                warning.SetActive(false);
                 break;
 
         }

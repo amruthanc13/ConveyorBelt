@@ -84,16 +84,31 @@ public class YoutGraph : MonoBehaviour
                 break;
 
         }
-        Debug.Log(mg);
+        //Debug.Log(mg);
         float yout = 0;
-          for (int i = 0; i < 10; i ++)
-          {
-              yout = ((ms / mg) * xoutList[i]) + yin;
-              youtList[i] = yout;
-            Debug.Log(yout);
-          }
-    }
+        for (int i = 0; i < 10; i++)
+        {
+            yout = ((ms / mg) * xoutList[i]) + yin;
+            youtList[i] = yout;
+            //Debug.Log(yout);
+        }
+        float yMaximum = 100f;
+        float graphHeight = GraphContainer.sizeDelta.y;
+        float graphWidth = GraphContainer.sizeDelta.x;
+        float xSize = 40f;
+        for (int i = 0; i < youtList.Count; i++)
+        {
+            float xPosition = i * xSize;
+            float yPosition = ((youtList[i] / yMaximum) * 1000 * graphHeight) - 15f;
+            lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
+            Line.GetComponent<LineAnimator>().linePoints[i] = new Vector3(xPosition, yPosition, 0);
+            //Debug.Log(youtList[i]);
+            //Debug.Log(xPosition+ " "+ yPosition);
 
+        }
+        Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
+        Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
+    }
     private void ShowGraph(List<float> valueList)
     {
         float xSize = 40f;
@@ -103,11 +118,11 @@ public class YoutGraph : MonoBehaviour
 
         for (int i = 0; i < valueList.Count; i++)
         {
-            Debug.Log("Value list inside showgraph");
-            Debug.Log(valueList[i]);
+           // Debug.Log("Value list inside showgraph***********************");
+            //Debug.Log(valueList[i]);
             float xPosition = i * xSize;
             float yPosition = ((valueList[i] / yMaximum) * 1000 * graphHeight) -15f; 
-            lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
+          //  lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
 
             RectTransform labelX = Instantiate(labelTemplateX);
             labelX.SetParent(GraphContainer, false);
@@ -138,6 +153,7 @@ public class YoutGraph : MonoBehaviour
             dashY.gameObject.SetActive(true);
             dashY.anchoredPosition = new Vector2(1.199997f, normalizedValue * graphHeight);
         }
+
     }
 
 }

@@ -13144,9 +13144,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: In the above Graph Tab, you can find a dynamic graphical representation
-    visualizing the loading of feed with water depending on the progress at the conveyor
-    belt. The info button provides details of the equations used to plot the graph.
+  m_text: In the graph tab you can find a dynamic graphical representation of the
+    loading of feed with water along the conveyor belt length as well as the loading
+    of air with water. The info button provides details of the equations used to
+    plot the graphs.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
   m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}
@@ -14610,8 +14611,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Buttons on the bottom menu let you start the process, accelerate the process,
-    show parameter information, show a graph and exit the application. \nYou can
-    hover over the buttons to see what it does!"
+    provide parameter information, show graphs and exit the application. \nYou can
+    hover over the buttons to find out more!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
   m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}
@@ -21624,10 +21625,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "In the above Parameter Tab, you can set the loading of feed with water
-    to different values. Moreover, you can find details on the air-flow and length
-    and width of the conveyor belt.\n<b>NOTE</b>: Once the process is started, you\n     
-    cannot change the parameter settings."
+  m_text: "In the parameter tab you can set the loading of feed with water to different
+    values and find more details about the air flow and length and width of the conveyor
+    belt.\n<b>NOTE</b>: Once the process is started, you\n      cannot change the
+    parameter settings."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c00e76962043da304ae14dc27354cae9, type: 2}
   m_sharedMaterial: {fileID: -8190808871597689856, guid: c00e76962043da304ae14dc27354cae9, type: 2}
@@ -22669,7 +22670,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<b>Welcome to Conveyor belt dryer!</b>
+  m_text: '<b>Welcome to conveyor belt dryer!</b>
 
 
     Let''s get started. You can

@@ -18,8 +18,8 @@ public class InfoButtonController : MonoBehaviour
         if(InfoCanvas.activeSelf)
         {
             InfoCanvas.SetActive(false);
-            GraphCanvas.transform.position = new Vector3(2.75f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
-            YoutGraphCanvas.transform.position = new Vector3(6.93f, YoutGraphCanvas.transform.position.y, YoutGraphCanvas.transform.position.z);
+            GraphCanvas.transform.position = new Vector3(1.76f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
+            YoutGraphCanvas.transform.position = new Vector3(6.60f, YoutGraphCanvas.transform.position.y, YoutGraphCanvas.transform.position.z);
         }
         else{
             InfoCanvas.SetActive(true);

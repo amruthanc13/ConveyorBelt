@@ -18,6 +18,8 @@ public class MoistureContent : MonoBehaviour
     private float requiredTableLength;
     public GameObject Line;
     public GameObject GraphCanvas;
+    public GameObject warningLength;
+    public GameObject lengthComponent;
     private GameObject plane;
     private LineRenderer lineRenderer;
     [SerializeField] private TextMeshProUGUI xinText;
@@ -34,7 +36,7 @@ public class MoistureContent : MonoBehaviour
             Line.GetComponent<LineAnimator>().startParallel();
         }
 
-        Button3Click();
+        Button4Click();
     }
 
     // Update is called once per frame
@@ -58,13 +60,13 @@ public class MoistureContent : MonoBehaviour
         }
 
         float xSize = 40f;
-        float yMaximum = 100f;
-        float graphHeight = 230f;
+        float yMaximum = 10f;
+        float graphHeight = 259.99f;
 
         for (int i = 0; i < xoutList.Count; i++)
         {
-            float xPosition = i * xSize;
-            float yPosition = (xoutList[i] / yMaximum) * 10 * graphHeight;
+            float xPosition = i  * xSize;
+            float yPosition = ((xoutList[i] / yMaximum) * graphHeight) - 15f;
            
             lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
             Line.GetComponent<LineAnimator>().linePoints[i] = new Vector3(xPosition, yPosition, 0);
@@ -73,9 +75,11 @@ public class MoistureContent : MonoBehaviour
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
 
         length = (float)(Ms * (1.5 - xin)) / (-m * 1);
-        lengthText.text = length.ToString() + " m";
+        lengthText.text = "The length of the conveyor belt is 18m. With the selected process settings, the required length of the feed to reach X(L)= 1.5 kg<sub><b>H<sub>2</sub>O</b></sub>/kg<sub><b>dr.s</b></sub> is " + length.ToString() + " m";
 
         plane.GetComponent<conveyor_plane>().distanceMultiplier = 4f;
+        warningLength.SetActive(true);
+        lengthComponent.SetActive(false);
     }
     public void Button2Click()
     {
@@ -91,22 +95,25 @@ public class MoistureContent : MonoBehaviour
         }
 
         float xSize = 40f;
-        float yMaximum = 100f;
-        float graphHeight = 230f;
+        float yMaximum = 10f;
+        float graphHeight = 259.99f;
 
         for (int i = 0; i < xoutList.Count; i++)
         {
             float xPosition = i * xSize;
-            float yPosition = (xoutList[i] / yMaximum) * 10 * graphHeight;
+            float yPosition = ((xoutList[i] / yMaximum) * graphHeight) - 15f;
             lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
             Line.GetComponent<LineAnimator>().linePoints[i] = new Vector3(xPosition, yPosition, 0);
         }
         Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
         length = (float)(Ms * (1.5 - xin)) / (-m * 1);
-        lengthText.text = length.ToString() + " m";
+        lengthText.text = "The length of the conveyor belt is 18m. With the selected process settings, the required length of the feed to reach X(L)= 1.5 kg<sub><b>H<sub>2</sub>O</b></sub>/kg<sub><b>dr.s</b></sub> is " + length.ToString() + " m";
 
         plane.GetComponent<conveyor_plane>().distanceMultiplier = 4f;
+
+        warningLength.SetActive(true);
+        lengthComponent.SetActive(false);
     }
     public void Button3Click()
     {
@@ -122,23 +129,26 @@ public class MoistureContent : MonoBehaviour
         }
 
         float xSize = 40f;
-        float yMaximum = 100f;
-        float graphHeight = 230f;
+        float yMaximum = 10f;
+        float graphHeight = 259.99f;
 
         for (int i = 0; i < xoutList.Count; i++)
         {
             float xPosition = i * xSize;
-            float yPosition = (xoutList[i] / yMaximum) * 10 * graphHeight;
-           // Debug.Log("xposition :" + xPosition + "Y position " + yPosition);
+            float yPosition = ((xoutList[i] / yMaximum) * graphHeight) - 15f;
             lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
             Line.GetComponent<LineAnimator>().linePoints[i] = new Vector3(xPosition, yPosition, 0);
+
         }
         Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
         length = (float)(Ms * (1.5 - xin)) / (-m * 1);
-        lengthText.text = length.ToString() + " m";
+        lengthText.text = "The length of the conveyor belt is 18m. With the selected process settings, the required length of the feed to reach X(L)= 1.5 kg<sub><b>H<sub>2</sub>O</b></sub>/kg<sub><b>dr.s</b></sub> is " + length.ToString() + " m";
 
         plane.GetComponent<conveyor_plane>().distanceMultiplier = 2f;
+
+        warningLength.SetActive(true);
+        lengthComponent.SetActive(false);
     }
     public void Button4Click()
     {
@@ -154,13 +164,13 @@ public class MoistureContent : MonoBehaviour
         }
 
         float xSize = 40f;
-        float yMaximum = 100f;
-        float graphHeight = 230f;
+        float yMaximum = 10f;
+        float graphHeight = 259.99f;
 
         for (int i = 0; i < xoutList.Count; i++)
         {
             float xPosition = i * xSize;
-            float yPosition = (xoutList[i] / yMaximum) * 10 * graphHeight;
+            float yPosition = ((xoutList[i] / yMaximum) * graphHeight) - 15f;
            // Debug.Log("xposition :" + xPosition + "Y position " + yPosition);
             lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
             Line.GetComponent<LineAnimator>().linePoints[i] = new Vector3(xPosition, yPosition, 0);
@@ -168,8 +178,10 @@ public class MoistureContent : MonoBehaviour
         Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
         length = (float)(Ms * (1.5 - xin)) / (-m * 1);
-        lengthText.text = length.ToString() + " m";
-        plane.GetComponent<conveyor_plane>().distanceMultiplier = 1.5f;
+        plane.GetComponent<conveyor_plane>().distanceMultiplier = 1f;
+
+        warningLength.SetActive(false);
+        lengthComponent.SetActive(true);
 
     }
     public void Button5Click()
@@ -186,21 +198,24 @@ public class MoistureContent : MonoBehaviour
         }
 
         float xSize = 40f;
-        float yMaximum = 100f;
-        float graphHeight = 230f;
+        float yMaximum = 10f;
+        float graphHeight = 259.99f;
 
         for (int i = 0; i < xoutList.Count; i++)
         {
             float xPosition = i * xSize;
-            float yPosition = (xoutList[i] / yMaximum) * 10 * graphHeight;
+            float yPosition = ((xoutList[i] / yMaximum) * graphHeight) - 15f;
             lineRenderer.SetPosition(i, new Vector3(xPosition, yPosition, 0));
             Line.GetComponent<LineAnimator>().linePoints[i] = new Vector3(xPosition, yPosition, 0);
         }
         Line.GetComponent<LineAnimator>().startPosition = Line.GetComponent<LineAnimator>().linePoints[0];
         Line.GetComponent<LineAnimator>().endPosition = Line.GetComponent<LineAnimator>().linePoints[1];
         length = (float)(Ms * (1.5 - xin)) / (-m * 1);
-        lengthText.text = length.ToString()+ " m";
+        lengthText.text = "The length of the conveyor belt is 18m. With the selected process settings, the required length of the feed to reach X(L)= 1.5 kg<sub><b>H<sub>2</sub>O</b></sub>/kg<sub><b>dr.s</b></sub> is " + length.ToString() + " m";
         plane.GetComponent<conveyor_plane>().distanceMultiplier = 0.4f;
+
+        warningLength.SetActive(true);
+        lengthComponent.SetActive(false);
 
     }
 

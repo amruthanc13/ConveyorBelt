@@ -19,13 +19,11 @@ public class MoreController : MonoBehaviour
     public GameObject onboardingCanvas;
     // public GameObject lessButton;
     private bool more = false;
-    private bool graph = false;
 
     // Start is called before the first frame update
     void Start()
     {
         more = false;
-        graph = true;
     }
 
     // Update is called once per frame
@@ -54,21 +52,23 @@ public class MoreController : MonoBehaviour
 
     public void onGraphButtonClick()
     {
-        if(!graph)
+
+        if (GraphCanvas.transform.position.x == 4f)
         {
             //GraphCanvas.SetActive(false);
+            
             GraphCanvas.transform.position = new Vector3(-96f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
-            GraphContainer.transform.position = new Vector3(102.75f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
-            YOUTGraphContainer.transform.position = new Vector3(106.93f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
-            graph = true;
+            GraphContainer.transform.position = new Vector3(-98.24f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
+            YOUTGraphContainer.transform.position = new Vector3(-93.25f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
+            PlayerPrefs.SetInt("graphTab", 0);
         }
         else{
             //GraphCanvas.SetActive(true);
             GraphCanvas.transform.position = new Vector3(4f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
-            GraphContainer.transform.position = new Vector3(2.75f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
-            YOUTGraphContainer.transform.position = new Vector3(6.93f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
+            GraphContainer.transform.position = new Vector3(1.76f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
+            YOUTGraphContainer.transform.position = new Vector3(6.60f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
             InfoCanvas.SetActive(false);
-            graph = false;
+            PlayerPrefs.SetInt("graphTab", 1);
         }
     }
     public void onParamsButtonClick()
@@ -77,10 +77,12 @@ public class MoreController : MonoBehaviour
         if (ParamCanvas.activeSelf)
         {
             ParamCanvas.SetActive(false);
+            PlayerPrefs.SetInt("paramTab", 0);
         }
         else
         {
             ParamCanvas.SetActive(true);
+            PlayerPrefs.SetInt("paramTab", 1);
         }
     }
 
@@ -89,11 +91,14 @@ public class MoreController : MonoBehaviour
 
         if (onboardingCanvas.activeSelf)
         {
+            Debug.Log(onboardingCanvas.activeSelf);
             onboardingCanvas.SetActive(false);
         }
         else
         {
+            Debug.Log(onboardingCanvas.activeSelf);
             onboardingCanvas.SetActive(true);
         }
     }
+
 }

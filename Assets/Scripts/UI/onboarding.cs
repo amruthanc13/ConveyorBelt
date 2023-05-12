@@ -50,45 +50,87 @@ public class onboarding : MonoBehaviour
     }
     public void Panel3BackClick()
     {
-
+        int paramTab = PlayerPrefs.GetInt("paramTab", 0);
         panel2.SetActive(true);
         panel3.SetActive(false);
-        ParamCanvas.SetActive(false);
+        if (paramTab == 1)
+        {
+            ParamCanvas.SetActive(true);
+        }
+        else
+        {
+            ParamCanvas.SetActive(false);
+        }
+        // ParamCanvas.SetActive(false);
 
     }
 
     public void Panel3forwardClick()
     {
-
-        ParamCanvas.SetActive(false);
+        int paramTab = PlayerPrefs.GetInt("paramTab", 0);
+        if (paramTab == 1)
+        {
+            ParamCanvas.SetActive(true);
+        }
+        else
+        {
+            ParamCanvas.SetActive(false);
+        }
+        // ParamCanvas.SetActive(false);
         panel3.SetActive(false);
         panel4.SetActive(true);
         GraphCanvas.transform.position = new Vector3(4f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
-        GraphContainer.transform.position = new Vector3(2.75f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
-        YOUTGraphContainer.transform.position = new Vector3(6.93f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
+        GraphContainer.transform.position = new Vector3(1.76f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
+        YOUTGraphContainer.transform.position = new Vector3(6.60f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
         InfoCanvas.SetActive(false);
 
     }
     public void Panel4BackClick()
     {
-
+        int graphTab = PlayerPrefs.GetInt("graphTab", 0);
         panel3.SetActive(true);
         panel4.SetActive(false);
         ParamCanvas.SetActive(true);
-        GraphCanvas.transform.position = new Vector3(-96f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
-        GraphContainer.transform.position = new Vector3(102.75f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
-        YOUTGraphContainer.transform.position = new Vector3(106.93f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
+        if (graphTab == 1)
+        {
+            GraphCanvas.transform.position = new Vector3(4f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
+            GraphContainer.transform.position = new Vector3(1.76f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
+            YOUTGraphContainer.transform.position = new Vector3(6.60f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
+            InfoCanvas.SetActive(false);
+        }
+        else
+        {
+            GraphCanvas.transform.position = new Vector3(-96f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
+            GraphContainer.transform.position = new Vector3(102.75f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
+            YOUTGraphContainer.transform.position = new Vector3(106.93f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
+        }
+        // GraphCanvas.transform.position = new Vector3(-96f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
+        // GraphContainer.transform.position = new Vector3(102.75f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
+        // YOUTGraphContainer.transform.position = new Vector3(106.93f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
 
 
     }
     public void Panel4forwardClick()
     {
-
+        int graphTab = PlayerPrefs.GetInt("graphTab", 0);
         panel5.SetActive(true);
         panel4.SetActive(false);
-        GraphCanvas.transform.position = new Vector3(-96f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
-        GraphContainer.transform.position = new Vector3(102.75f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
-        YOUTGraphContainer.transform.position = new Vector3(106.93f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
+        if (graphTab == 1)
+        {
+            GraphCanvas.transform.position = new Vector3(4f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
+            GraphContainer.transform.position = new Vector3(1.76f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
+            YOUTGraphContainer.transform.position = new Vector3(6.60f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
+            InfoCanvas.SetActive(false);
+        }
+        else
+        {
+            GraphCanvas.transform.position = new Vector3(-96f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
+            GraphContainer.transform.position = new Vector3(102.75f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
+            YOUTGraphContainer.transform.position = new Vector3(106.93f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
+        }
+        // GraphCanvas.transform.position = new Vector3(-96f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
+        // GraphContainer.transform.position = new Vector3(102.75f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
+        // YOUTGraphContainer.transform.position = new Vector3(106.93f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
 
 
     }
@@ -99,8 +141,8 @@ public class onboarding : MonoBehaviour
         panel4.SetActive(true);
         panel5.SetActive(false);
         GraphCanvas.transform.position = new Vector3(4f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
-        GraphContainer.transform.position = new Vector3(2.75f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
-        YOUTGraphContainer.transform.position = new Vector3(6.93f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
+        GraphContainer.transform.position = new Vector3(1.76f, GraphContainer.transform.position.y, GraphContainer.transform.position.z);
+        YOUTGraphContainer.transform.position = new Vector3(6.60f, YOUTGraphContainer.transform.position.y, YOUTGraphContainer.transform.position.z);
 
         InfoCanvas.SetActive(false);
     }
@@ -122,7 +164,27 @@ public class onboarding : MonoBehaviour
     {
 
         onBoardingCanvas.SetActive(false);
-        GraphCanvas.transform.position = new Vector3(-96f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
-        ParamCanvas.SetActive(false);
+        // GraphCanvas.transform.position = new Vector3(-96f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
+        // ParamCanvas.SetActive(false);
+        int paramTab = PlayerPrefs.GetInt("paramTab", 0);
+        int graphTab = PlayerPrefs.GetInt("graphTab", 0);
+
+        if (paramTab == 1)
+        {
+            ParamCanvas.SetActive(true);
+        }
+        else
+        {
+            ParamCanvas.SetActive(false);
+        }
+
+        if (graphTab == 1)
+        {
+            GraphCanvas.transform.position = new Vector3(4f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
+        }
+        else
+        {
+            GraphCanvas.transform.position = new Vector3(-96f, GraphCanvas.transform.position.y, GraphCanvas.transform.position.z);
+        }
     }
 }

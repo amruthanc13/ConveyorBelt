@@ -350,7 +350,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -232}
+  m_AnchoredPosition: {x: 0, y: -228}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &474336264
@@ -373,9 +373,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\n\u2022\tVisualization of feed on the conveyor belt with co-current
-    air flow.\r\n\u2022\tShows graphical representation of loading of feed with water
-    along the conveyor belt length.\r\n"
+  m_text: "\n\n\u2022\tVisualization of convective drying of a particulate good on
+    the conveyor belt with co-current air flow.\n\u2022\tGraphical representation
+    of loading of feed and loading of the air with water along the conveyor belt
+    length.\n\u2022\tComparison of outlet water loading of air and product for different
+    inlet loadings and air flow rates.\n\u2022\tEvaluation of the drying process
+    regarding the suitability of dryer length and air flow rates.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e13ef7f00059a5e339f51dbd50b4ad74, type: 2}
   m_sharedMaterial: {fileID: 3582769084208089422, guid: e13ef7f00059a5e339f51dbd50b4ad74, type: 2}
@@ -402,8 +405,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -438,7 +441,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -263.92944, y: -176.59752, z: -254.56909, w: 62.00404}
+  m_margin: {x: -263.92944, y: -184.87782, z: -254.56909, w: 62.00404}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -510,13 +513,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The project focuses on the realistic visualization of one of the most
-    popular chemical processes \u2013 <b>Convective drying technology </b>.The visualization
-    is enhanced by graphical representations and supported by textual descriptions.
-    The main motive of the project is to help the user visualize this very popular
-    and important process and at the same time give the user in-depth information
-    about the execution of the process including the activities that happen at the
-    back end give him a good learning experience."
+  m_text: The project focuses on the realistic visualization of <b><i>continuous
+    belt dryer</i></b>. The visualization is enhanced by graphical representations
+    and supported by textual descriptions with the purpose to enhance the understanding
+    of convective drying. It is shown how the water loading of the product as well
+    as of the drying air change along the dryer belt length. The product property
+    and air moisture content at the dryer outlet are analysed.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e13ef7f00059a5e339f51dbd50b4ad74, type: 2}
   m_sharedMaterial: {fileID: 3582769084208089422, guid: e13ef7f00059a5e339f51dbd50b4ad74, type: 2}
@@ -543,8 +545,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -762,7 +764,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -205}
+  m_AnchoredPosition: {x: 0, y: -193}
   m_SizeDelta: {x: 200, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &633949633
@@ -785,7 +787,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <b>Features of this application</b>
+  m_text: <b>Features of this application:</b>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
   m_sharedMaterial: {fileID: -5924337716585601116, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
@@ -848,7 +850,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -263.92944, y: -176.59752, z: 98.976006, w: 151.90955}
+  m_margin: {x: -263.92944, y: -176.59752, z: 98.97743, w: 151.90955}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

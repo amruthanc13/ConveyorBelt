@@ -150,7 +150,7 @@ RectTransform:
   m_GameObject: {fileID: 412078343}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1949226648}
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2d8b92cc5ec2e9125b225982131f1602, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a893ab178cf2dc940a3d852bc96a61c6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -437,7 +437,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26, y: 172}
+  m_AnchoredPosition: {x: 52, y: 172}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &574598711
@@ -460,7 +460,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Faculty Co-ordinators
+  m_text: Supervisors
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
   m_sharedMaterial: {fileID: -5924337716585601116, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
@@ -493,7 +493,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 4
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -523,7 +523,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -105.73575, w: 0}
+  m_margin: {x: 0, y: 0, z: 43.668407, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -660,7 +660,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 4
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1327,9 +1327,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Chair of Thermal Process Engineering,
+  m_text: 'Institute of Process Engineering
 
-    Institute for Process Engineering'
+    Faculty of Process and Systems Engineering'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
   m_sharedMaterial: {fileID: -5924337716585601116, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
@@ -1587,10 +1587,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Institute for Technical and Operational Information Systems(ITI)
+  m_text: 'Institute for Technical and Business Information Systems
 
-    AG
-    Databases & Software Engineering'
+    AG Database
+    & Software Engineering'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
   m_sharedMaterial: {fileID: -5924337716585601116, guid: a2a722198f84c11079ec08244b2f99c5, type: 2}
